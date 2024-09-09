@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import Carousel from '../components/Caroutsel'
+import Footer from '../components/Footer'
+import SupportUs from '../components/SupportUs'
+import OurRescue from '../components/OurRescue'
 export default function HomePage() {
     return (
         <>
             <Navbar></Navbar>
             <Carousel></Carousel>
-            <div className='md:text-base text-xs'>
-                <div className="bg-[#991B1E] px-20 py-5  gap-4">
-                    <h2 className="text-3xl font-bold uppercase text-center m-4 text-[#F9EDD2]">Our Brands</h2>
+            <div className='md:text-lg text-xs'>
+                <div className="bg-[#EF3927] px-20 py-5  gap-4">
+                    <h1 className=" text-3xl md:text-5xl uppercase text-center m-4 text-[#F9EDD2]">Our Brands</h1>
                     <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl">
                         <div className=" basis-3/12 my-8 flex justify-center items-center" >
                             <img src="./images/Group.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
@@ -63,6 +66,9 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+            <OurRescue></OurRescue>
+            <SupportUs></SupportUs>
+            <Footer></Footer>
         </>
     )
 }

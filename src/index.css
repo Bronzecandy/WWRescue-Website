@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body {
-    font-family: 'Lexend';
-  };
+  font-family: 'Lexend';
+}
+h1{
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background:transparent;
+  border: 2px solid #EF3927;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 40px;
+  width: 30px;
+  color: #fff;
+  background: #EF3927;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-  

@@ -73,6 +73,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+      <div className='h-88'></div>
     </>
   );
 };
