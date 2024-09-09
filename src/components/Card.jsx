@@ -1,13 +1,14 @@
 import React from 'react';
 
-const DogCard = ({ image, name, gender, description,color }) => {
+const DogCard = ({ image, subnames, gender,color,backgroundImage,name }) => {
   return (
     <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
       {/* Image Section */}
       <div 
       style={{ 
-        backgroundImage: "url('./images/Rectangle 128.png')",
+        backgroundImage: backgroundImage,
         backgroundColor: color,
+        height: '300px'
         }}>
         <img 
           src={image} 
@@ -17,7 +18,10 @@ const DogCard = ({ image, name, gender, description,color }) => {
       </div>
       
       {/* Content Section */}
-      <div className={`p-6 text-center border-2 border-[${color}]`}>
+      <div className="p-6 text-center border-2 rounded-b-lg" 
+      style={{ 
+        borderColor: color,
+        }}>
         {/* Name and Gender */}
         <h2 className="text-2xl font-bold mb-2">
           {name}{' '}
@@ -27,7 +31,10 @@ const DogCard = ({ image, name, gender, description,color }) => {
         </h2>
         
         {/* Description */}
-        <p className="text-gray-700 text-base mb-4">{description}</p>
+        {subnames.map((subname,index) => (
+          <p key={index+1} className="text-gray-700 text-base mb-2">{subname}</p>
+        ))}
+        
       </div>
     </div>
   );
