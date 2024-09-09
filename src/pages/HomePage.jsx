@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import Carousel from '../components/Caroutsel'
 import Footer from '../components/Footer'
 import SupportUs from '../components/SupportUs'
