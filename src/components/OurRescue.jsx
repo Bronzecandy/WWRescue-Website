@@ -5,6 +5,7 @@ export default function OurRescue() {
   return (
     <div>
       <DogCarousel></DogCarousel>
+      <DogCarousel></DogCarousel>
     </div>
   )
 }
