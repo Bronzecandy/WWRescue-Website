@@ -19,19 +19,19 @@ export default function SupportUs() {
                 {/* Content Section */}
                 <div className="relative flex flex-col h-full p-8">
                     {/* Title */}
-                    <h1 className="text-3xl md:text-5xl leading-tight mb-6 text-[#F9EDD2]">
+                    <h1 className="text-3xl md:text-6xl leading-tight mb-6 text-[#F9EDD2]">
                         CONTRIBUTE TO OUR COMMUNITY
                     </h1>
 
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-6">
-                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] text-[#EF3927] border-2 border-solid border-[#EF3927]  py-2 px-6 rounded-full hover:bg-white transition">
+                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927] border-2 border-solid border-[#EF3927]  py-2 px-6 rounded-full transition">
                             PATREON
                         </button>
-                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] text-[#EF3927]  border-2 border-solid border-[#EF3927] py-2 px-6 rounded-full hover:bg-white transition">
+                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927]  border-2 border-solid border-[#EF3927] py-2 px-6 rounded-full transition">
                             PAYPAL
                         </button>
-                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] text-[#EF3927]  border-2 border-solid border-[#EF3927] py-2 px-6 rounded-full hover:bg-white transition">
+                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927]  border-2 border-solid border-[#EF3927] py-2 px-6 rounded-full transition">
                             LOCALLY DONATE
                         </button>
                     </div>

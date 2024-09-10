@@ -10,7 +10,7 @@ export default function HomePage() {
             <Navbar></Navbar>
             <Carousel></Carousel>
             <div className='md:text-lg text-xs'>
-                <div className="bg-[#EF3927] px-20 py-5  gap-4">
+                <div className="bg-[#EF3927] px-2 md:px-20 py-5  gap-4">
                     <h1 className=" text-3xl md:text-5xl uppercase text-center m-4 text-[#F9EDD2]">Our Brands</h1>
                     <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl">
                         <div className=" basis-3/12 my-8 flex justify-center items-center" >
@@ -24,7 +24,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#AF1E3C] px-20 py-5  gap-4">
+                <div className="bg-[#AF1E3C] px-2 md:px-20 py-5  gap-4">
                     <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl">
                         <div className=" basis-4/12 flex justify-center items-end">
                             <img src="./images/Rectangle 150.png" alt="Person with tablet" className=" group-hover:w-10/12 w-3/4 h-auto object-cover  transition-all duration-300" />
@@ -38,7 +38,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#B84626] px-20 py-5  gap-4">
+                <div className="bg-[#B84626] px-2 md:px-20 py-5  gap-4">
                     <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl">
                         <div className=" basis-3/12 my-8 flex justify-center items-center" >
                             <img src="./images/logo cho web-89 1.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
@@ -51,7 +51,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#BA6127] px-20 py-5  gap-4">
+                <div className="bg-[#BA6127] px-2 md:px-20 py-5  gap-4">
                     <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl">
                         <div className=" basis-4/12 flex justify-start items-end">
                             <img src="./images/Rectangle 151.png" alt="Person with tablet" className=" group-hover:w-10/12 w-3/4 h-auto object-cover  transition-all duration-300" />

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import DogCard from './Card';
-
+import PartnerCard from './PartnerCard';
 const CustomNavigation = () => {
     const swiper = useSwiper();
 
@@ -18,29 +17,35 @@ const CustomNavigation = () => {
     );
 };
 
-const DogCarousel = ({ backgroundImage }) => {
+const PartnerCarousel = ({ backgroundImage }) => {
     const slides = [
-        './images/Frame 5.png',
-        './images/Meo.png',
-        './images/Frame 5.png',
-        './images/Meo.png',
-        './images/Meo.png',
-        './images/Meo.png',
+        {
+            imageUrl: './images/whiskas.png',
+            description: 'Support WagWel Feline food'
+        },
+        {
+            imageUrl: './images/felix.png',
+            description: 'Support WagWel Feline food'
+        },
+        {
+            imageUrl: './images/royalcanin.png',
+            description: 'Support WagWel Canine food'
+        },
+        {
+            imageUrl: './images/catfee.png',
+            description: 'Support WagWel Feline litter'
+        }
     ];
 
-    // Function to determine the color based on the slide index
-    const getColorByIndex = (index) => {
-        const colors = ['#00723B', '#FAA627', '#3D71B8']; // Array of colors based on the pattern
-        return colors[index % 3]; // Use modulo to cycle through the colors
-    };
 
     return (
-        <div className='pb-5'>
+        <div className='pb-10'>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 loop={true}
                 spaceBetween={0}
                 slidesPerView={4}
+                autoplay={ {delay: 2000,}}
                 breakpoints={{
                     300: {
                         slidesPerView: 1,
@@ -62,15 +67,10 @@ const DogCarousel = ({ backgroundImage }) => {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index} style={{ height: 'auto' }} className='flex justify-center'>
-                        <DogCard
-                            backgroundImage={backgroundImage}
-                            image="./images/Rectangle 126.png"
-                            name="An"
-                            gender="male"
-                            description="One fang. Loves treats. Silent ninja."
-                            color={getColorByIndex(index)} // Set the color based on the index
-                            subnames={['One fang', 'Loves treats', 'Silent ninja']}
-                        />
+                        <PartnerCard 
+                        imageUrl={slide.imageUrl}
+                        description={slide.description}
+                        ></PartnerCard>
                     </SwiperSlide>
                 ))}
                 <CustomNavigation />
@@ -80,4 +80,4 @@ const DogCarousel = ({ backgroundImage }) => {
     );
 };
 
-export default DogCarousel;
+export default PartnerCarousel;

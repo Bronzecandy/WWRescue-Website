@@ -23,6 +23,11 @@ h1{
   color: #fff;
   background: #EF3927;
 }
+/* Đặt trong tệp CSS */
+.card:hover {
+  box-shadow: 0 4px 16px 2px var(--hover-color);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -21,7 +21,7 @@ const CustomNavigation = () => {
 const Carousel = () => {
   const slides = [
     './images/Frame 5.png',
-    './images/Meo.png',
+    './images/Frame 5.png',
     './images/Frame 5.png',
   ];
 
@@ -36,6 +36,7 @@ const Carousel = () => {
           },
         }}
         loop={true}
+        autoplay={ {delay: 3000,}}
         spaceBetween={0}
         slidesPerView={1}
       >
