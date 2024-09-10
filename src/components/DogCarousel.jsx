@@ -44,11 +44,11 @@ const DogCarousel = ({ backgroundImage }) => {
                 breakpoints={{
                     300: {
                         slidesPerView: 1,
-                        spaceBetween: 0,
+                        spaceBetween: 20,
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 0,
+                        spaceBetween: 20,
                     },
                     1260: {
                         slidesPerView: 3,
