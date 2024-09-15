@@ -20,14 +20,6 @@ const CustomNavigation = () => {
 const PartnerCarousel = () => {
     const slides = [
         {
-            imageUrl: './images/whiskas.png',
-            description: 'Support WagWel Feline food'
-        },
-        {
-            imageUrl: './images/felix.png',
-            description: 'Support WagWel Feline food'
-        },
-        {
             imageUrl: './images/royalcanin.png',
             description: 'Support WagWel Canine food'
         },
