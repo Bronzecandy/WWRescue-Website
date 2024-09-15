@@ -1,9 +1,9 @@
 import React from 'react';
-import { MenIcon,WomenIcon } from './Icon';
+import { MenIcon, WomenIcon } from './Icon';
 const DogCard = ({ image, subnames, gender, color, backgroundImage, name }) => {
   return (
     <div
-      className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white transition-shadow duration-300 card"
+      className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white transition-shadow duration-300 card w-full lg:w-8/12"
       style={{
         '--hover-color': color, // Định nghĩa biến màu trong inline style
       }}
@@ -32,7 +32,7 @@ const DogCard = ({ image, subnames, gender, color, backgroundImage, name }) => {
         <h2 className="text-2xl font-bold mb-2">
           {name}{' '}
           <span className="inline-block text-blue-500">
-            {gender === 'male' ? <MenIcon color={color}></MenIcon> : <WomenIcon></WomenIcon>}
+            {gender === 'male' ? (<MenIcon color={color}></MenIcon>) : (<WomenIcon color={color}></WomenIcon>)}
           </span>
         </h2>
 

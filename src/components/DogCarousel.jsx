@@ -18,16 +18,7 @@ const CustomNavigation = () => {
     );
 };
 
-const DogCarousel = ({ backgroundImage }) => {
-    const slides = [
-        './images/Frame 5.png',
-        './images/Meo.png',
-        './images/Frame 5.png',
-        './images/Meo.png',
-        './images/Meo.png',
-        './images/Meo.png',
-    ];
-
+const DogCarousel = ({ backgroundImage,input }) => {
     // Function to determine the color based on the slide index
     const getColorByIndex = (index) => {
         const colors = ['#00723B', '#FAA627', '#3D71B8']; // Array of colors based on the pattern
@@ -60,16 +51,16 @@ const DogCarousel = ({ backgroundImage }) => {
                     },
                 }}
             >
-                {slides.map((slide, index) => (
+                {input.map((slide, index) => (
                     <SwiperSlide key={index} style={{ height: 'auto' }} className='flex justify-center'>
                         <DogCard
                             backgroundImage={backgroundImage}
-                            image="./images/Rectangle 126.png"
-                            name="An"
-                            gender="male"
+                            image={slide.imageUrl}
+                            name={slide.name}
+                            gender={slide.gender}
                             description="One fang. Loves treats. Silent ninja."
                             color={getColorByIndex(index)} // Set the color based on the index
-                            subnames={['One fang', 'Loves treats', 'Silent ninja']}
+                            subnames={slide.subname}
                         />
                     </SwiperSlide>
                 ))}

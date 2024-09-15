@@ -17,7 +17,7 @@ const CustomNavigation = () => {
     );
 };
 
-const PartnerCarousel = ({ backgroundImage }) => {
+const PartnerCarousel = () => {
     const slides = [
         {
             imageUrl: './images/whiskas.png',
