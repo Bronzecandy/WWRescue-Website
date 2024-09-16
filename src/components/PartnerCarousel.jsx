@@ -21,12 +21,44 @@ const PartnerCarousel = () => {
     const slides = [
         {
             imageUrl: './images/royalcanin.png',
-            description: 'Support WagWel Canine food'
+            description: 'Educational Event Partner'
         },
         {
             imageUrl: './images/catfee.png',
-            description: 'Support WagWel Feline litter'
-        }
+            description: 'Organic Cat Litter Sponsor'
+        },
+        {
+            imageUrl: './images/Tito.png',
+            description: 'Beverage & Rescue Partner'
+        },
+        {
+            imageUrl: './images/Vemedin.png',
+            description: 'Dog & Cat Medicine Sponsor'
+        },
+        {
+            imageUrl: './images/Keos.png',
+            description: 'Shelter Support Partner'
+        },
+        {
+            imageUrl: './images/Insta360.png',
+            description: 'Pet Action Camera Sponsor'
+        },
+        {
+            imageUrl: './images/Kingpet.png',
+            description: 'Fresh Cat Pate Sponsor'
+        },
+        {
+            imageUrl: './images/Levoit.png',
+            description: 'Pet Air Filters Sponsor'
+        },
+        {
+            imageUrl: './images/GFBPharma.png',
+            description: 'Cat & Dog Medicine Partner'
+        },
+        {
+            imageUrl: './images/Roborock.png',
+            description: 'Pet Cleaning Appliances Sponsor'
+        },
     ];
 
 
