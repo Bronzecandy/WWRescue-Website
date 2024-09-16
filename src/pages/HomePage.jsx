@@ -11,7 +11,7 @@ export default function HomePage() {
             <Carousel></Carousel>
             <img src='./images/WWR.gif' ></img>
             <div className='2xl:text-lg lg:text-base text-[10px]'>
-                <div className="bg-[#EF3927] px-2 md:px-20 py-5 ">
+                <div className="bg-[#991B1E] px-2 md:px-20 py-5 ">
                     <h1 className=" text-3xl md:text-5xl uppercase text-center m-4 text-[#F9EDD2]">Our Brands</h1>
                     <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl md:px-0 px-3">
                         <div className="basis-5/12 md:basis-3/12 my-8 flex justify-center items-center" >

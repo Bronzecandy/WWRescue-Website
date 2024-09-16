@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#EF3927] text-[#F9EDD2] py-8 px-4">
+    <footer className="bg-[#991B1E] text-[#F9EDD2] py-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo Section */}
         <div className="flex flex-col mb-6 md:mb-0">
@@ -23,7 +23,7 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-2">Social media</h3>
               <div className="flex space-x-4">
                 <a href="#" className="hover:text-gray-300">
-                  <FaFacebookF size={24}  />
+                  <FaFacebookF size={24} />
                 </a>
                 <a href="#" className="hover:text-gray-300">
                   <FaInstagram size={24} />
@@ -37,25 +37,25 @@ const Footer = () => {
             {/* Contact */}
             <div>
               <h3 className="text-lg font-semibold mb-2">Contact</h3>
-              <p>welcometorohouse@gmail.com</p>
+              <p>support@wagwelrescue.org</p>
             </div>
             <div>
-            <h3 className="text-lg font-semibold mb-2">Address</h3>
-            <p>
-              24/2 Trần Ngọc Diện, Thảo Điền,
-              <br /> District 2, Ho Chi Minh City
-            </p>
+              <h3 className="text-lg font-semibold mb-2">Address</h3>
+              <p>
+                24/2 Trần Ngọc Diện, Thảo Điền,
+                <br /> District 2, Ho Chi Minh City
+              </p>
             </div>
             {/* Patreon */}
             <div>
               <h3 className="text-lg font-semibold mb-2">Patreon</h3>
               <p>
-                <a href="https://abc.patreon.com" className="hover:text-gray-300">
-                  abc.patreon.com
+                <a href="https://www.patreon.com/wagwelrescue" className="hover:text-gray-300" target="_blank" rel="noopener noreferrer">
+                  www.patreon.com/wagwelrescue
                 </a>
               </p>
             </div>
-           
+
 
             {/* Substack */}
             <div>
@@ -69,9 +69,9 @@ const Footer = () => {
           </div>
 
           {/* Address */}
-          
+
         </div>
-        
+
       </div>
     </footer>
   );

@@ -1,15 +1,19 @@
 import React from "react"
-import HomePage from "./pages/HomePage"
+import HomePage from "./pages/HomePage";
+import ComingsoonPages from "./pages/ComingsoonPages";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    <>
-      <HomePage></HomePage>
-      
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage></HomePage>} />
+        <Route path="/Coming" element={<ComingsoonPages/>} />
+      </Routes>
+    </Router>
   )
 }
 

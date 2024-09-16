@@ -136,13 +136,13 @@ export default function OurRescue() {
     <div className='bg-[#F9EDD2] py-16 px-8'>
       <div>
         <div className="text-center  md:text-lg text-xs">
-          <h1 className="text-3xl md:text-5xl mb-4  text-[#EF3927]">OUR RESCUES</h1>
+          <h1 className="text-3xl md:text-5xl mb-4  text-[#991B1E]">OUR RESCUES</h1>
           <h2 className="text-3xl text-[#F08122] font-semibold py-5">
             CANINE </h2>
         </div>
         <DogCarousel backgroundImage="url('./images/Rectangle 128.png')" input={dogs}></DogCarousel>
         <div className='flex justify-center py-4'>
-          <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927] border-2 border-solid border-[#EF3927]  py-2 px-6 rounded-full transition">
+          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition">
             MORE DETAIL
           </button>
         </div>
@@ -155,15 +155,15 @@ export default function OurRescue() {
         </div>
         <DogCarousel backgroundImage="url('./images/MBackground.png')" input={cats}></DogCarousel>
         <div className='flex justify-center py-4'>
-          <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927] border-2 border-solid border-[#EF3927]  py-2 px-6 rounded-full transition">
+          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition">
             MORE DETAIL
           </button>
         </div>
       </div>
 
-      <div className='border-2 border-[#EF3927] rounded-xl'>
+      <div className='border-2 border-[#991B1E] rounded-xl'>
         <div className="text-center py-5 md:text-lg text-xs">
-          <h1 className="text-5xl text-[#EF3927]">
+          <h1 className="text-5xl text-[#991B1E]">
             OUR PARTNERS </h1>
         </div>
         <PartnerCarousel backgroundImage="url('./images/MBackground.png')"></PartnerCarousel>

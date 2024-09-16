@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { WWRIcon, WWAIcon, WWFIcon, WWCIcon } from './Icon';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icon từ react-icons
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('HOME');
   const [menuOpen, setMenuOpen] = useState(false); // Trạng thái của menu
@@ -12,36 +12,36 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-[#EF3927] fixed w-full z-20">
+      <header className="bg-[#991B1E] fixed w-full z-20">
         <div className="flex items-center justify-between p-4">
           {/* Logo Section */}
           <div className="flex">
-            <img src="/images/Group 98.png" alt="Wagwell Rescue" className="h-10" />
+            <img src="/images/Group 98.png" alt="Wagwell Rescue" className="h-14" />
           </div>
 
           {/* Navigation Links - Ẩn trên tablet */}
           <nav className="hidden md:flex gap-6 text-xs lg:text-base">
-            <a
-              href="#"
+            <Link
+              to="/"
               className={`text-[#F9EDD2] ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => setActiveLink('HOME')}
             >
               HOME
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/Coming"
               className={`text-[#F9EDD2] ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => setActiveLink('ABOUT US')}
             >
               ABOUT US
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/Coming"
               className={`text-[#F9EDD2] ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => setActiveLink('SUPPORT SUSTAINABLE RESCUE')}
             >
               SUPPORT SUSTAINABLE RESCUE
-            </a>
+            </Link>
           </nav>
 
           {/* Icons Section - Ẩn trên tablet */}
@@ -117,7 +117,7 @@ const Navbar = () => {
       </header>
 
       {/* Padding to prevent content from being hidden behind the navbar */}
-      <div className="h-16"></div>
+      <div className="h-16 md:h-0"></div>
     </>
   );
 };

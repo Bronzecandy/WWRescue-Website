@@ -3,7 +3,7 @@ import React from 'react'
 export default function SupportUs() {
     return (
         <div>
-            <div className="bg-[#EF3927] text-center py-10 px-5 md:px-10 lg:px-20 text-[#F9EDD2] md:text-lg text-xs">
+            <div className="bg-[#991B1E] text-center py-10 px-5 md:px-10 lg:px-20 text-[#F9EDD2] md:text-lg text-xs">
                 <h1 className="text-3xl md:text-5xl mb-4">SUPPORT US</h1>
                 <p>
                     Working hand-in-hand with local shelters and the rescue community in </p>
@@ -25,14 +25,14 @@ export default function SupportUs() {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-6">
-                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927] border-2 border-solid border-[#EF3927]  py-2 px-6 rounded-full transition">
-                            PATREON
+                        <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition">
+                            <a href="https://www.patreon.com/wagwelrescue" target="_blank" rel="noopener noreferrer">PATREON</a>
                         </button>
-                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927]  border-2 border-solid border-[#EF3927] py-2 px-6 rounded-full transition">
-                            PAYPAL
+                        <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E]  border-2 border-solid border-[#991B1E] py-2 px-6 rounded-full transition">
+                           <a href='https://www.paypal.com/paypalme/alexward327'target="_blank" rel="noopener noreferrer">PAYPAL</a> 
                         </button>
-                        <button className="bg-[#F9EDD2] hover:bg-[#EF3927] hover:text-[#F9EDD2] md:w-52 text-[#EF3927]  border-2 border-solid border-[#EF3927] py-2 px-6 rounded-full transition">
-                            LOCALLY DONATE
+                        <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E]  border-2 border-solid border-[#991B1E] py-2 px-6 rounded-full transition">
+                            <a href='mailto:donate@wagwelrescue.org'>LOCALLY DONATE</a>
                         </button>
                     </div>
                 </div>
