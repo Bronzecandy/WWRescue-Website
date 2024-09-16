@@ -25,15 +25,14 @@ export default function SupportUs() {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-6">
-                        <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition">
-                            <a href="https://www.patreon.com/wagwelrescue" target="_blank" rel="noopener noreferrer">PATREON</a>
-                        </button>
-                        <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E]  border-2 border-solid border-[#991B1E] py-2 px-6 rounded-full transition">
-                           <a href='https://www.paypal.com/paypalme/alexward327'target="_blank" rel="noopener noreferrer">PAYPAL</a> 
-                        </button>
-                        <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E]  border-2 border-solid border-[#991B1E] py-2 px-6 rounded-full transition">
-                            <a href='mailto:donate@wagwelrescue.org'>LOCALLY DONATE</a>
-                        </button>
+                        <a href="https://www.patreon.com/wagwelrescue" target="_blank" rel="noopener noreferrer" className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition text-center">
+                            PATREON
+                        </a>
+
+                        <a href='https://www.paypal.com/paypalme/alexward327' target="_blank" rel="noopener noreferrer" className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E]  border-2 border-solid border-[#991B1E] py-2 px-6 rounded-full transition text-center">PAYPAL</a>
+
+                        <a href='mailto:donate@wagwelrescue.org' className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E]  border-2 border-solid border-[#991B1E] py-2 px-6 rounded-full transition text-center">LOCALLY DONATE</a>
+
                     </div>
                 </div>
             </section>
