@@ -22,13 +22,13 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Social media</h3>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-gray-300">
+                <a href="https://www.facebook.com/WagWelRescue/" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
                   <FaFacebookF size={24} />
                 </a>
-                <a href="#" className="hover:text-gray-300">
+                <a href="#" className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
                   <FaInstagram size={24} />
                 </a>
-                <a href="#" className="hover:text-gray-300">
+                <a href="https://www.tiktok.com/@wagwelfeline" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
                   <FaTiktok size={24} />
                 </a>
               </div>
@@ -37,7 +37,7 @@ const Footer = () => {
             {/* Contact */}
             <div>
               <h3 className="text-lg font-semibold mb-2">Contact</h3>
-              <p>support@wagwelrescue.org</p>
+              <a href='mailto:support@wagwelrescue.org'>support@wagwelrescue.org</a>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">Address</h3>
@@ -61,7 +61,7 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Substack</h3>
               <p>
-                <a href="https://abc.substack.com" className="hover:text-gray-300">
+                <a href="" className="hover:text-gray-300">
                   abc.substack.com
                 </a>
               </p>
