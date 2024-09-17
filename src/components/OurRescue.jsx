@@ -1,7 +1,10 @@
-import React from 'react'
-import DogCarousel from './DogCarousel'
-import PartnerCarousel from './PartnerCarousel'
+import React, { useState } from 'react';
+import DogCarousel from './DogCarousel';
+import PartnerCarousel from './PartnerCarousel';
+import ComingSoonDialog from './ComingSoonDialog';
 export default function OurRescue() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  console.log(isDialogOpen);
   const dogs = [
     {
       imageUrl: './images/dogs/An.png',
@@ -142,7 +145,8 @@ export default function OurRescue() {
         </div>
         <DogCarousel backgroundImage="url('./images/Rectangle 128.png')" input={dogs}></DogCarousel>
         <div className='flex justify-center py-4'>
-          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition">
+          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition"
+            onClick={() => setIsDialogOpen(true)}>
             MORE DETAIL
           </button>
         </div>
@@ -155,12 +159,16 @@ export default function OurRescue() {
         </div>
         <DogCarousel backgroundImage="url('./images/MBackground.png')" input={cats}></DogCarousel>
         <div className='flex justify-center py-4'>
-          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition">
+          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition"
+            onClick={() => setIsDialogOpen(true)}>
             MORE DETAIL
           </button>
         </div>
       </div>
-
+      <ComingSoonDialog
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+      />
       <div className='border-2 border-[#991B1E] rounded-xl'>
         <div className="text-center py-5 md:text-lg text-xs">
           <h1 className="text-5xl text-[#991B1E]">

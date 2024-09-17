@@ -37,7 +37,7 @@ const Footer = () => {
             {/* Contact */}
             <div>
               <h3 className="text-lg font-semibold mb-2">Contact</h3>
-              <a href='mailto:support@wagwelrescue.org'>support@wagwelrescue.org</a>
+              <a href='mailto:support@wagwelrescue.org' className="hover:text-gray-300">support@wagwelrescue.org</a>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">Address</h3>
@@ -61,8 +61,8 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Substack</h3>
               <p>
-                <a href="" className="hover:text-gray-300">
-                  abc.substack.com
+                <a href="https://wagwel.substack.com/" target='_blank' className="hover:text-gray-300">
+                  wagwel.substack.com
                 </a>
               </p>
             </div>
