@@ -4,7 +4,6 @@ import PartnerCarousel from './PartnerCarousel';
 import ComingSoonDialog from './ComingSoonDialog';
 export default function OurRescue() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  console.log(isDialogOpen);
   const dogs = [
     {
       imageUrl: './images/dogs/An.png',

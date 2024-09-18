@@ -30,7 +30,7 @@ const Navbar = () => {
           </Link>
 
           {/* Navigation Links - Ẩn trên tablet */}
-          <nav className="hidden md:flex gap-6 text-xs lg:text-base">
+          <nav className="hidden lg:flex gap-6 text-xs lg:text-base">
             <Link
               to="/"
               className={`text-[#F9EDD2] ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
@@ -52,7 +52,7 @@ const Navbar = () => {
           </nav>
 
           {/* Icons Section - Ẩn trên tablet */}
-          <div className="hidden md:flex gap-4">
+          <div className="hidden lg:flex gap-4">
             <WWRIcon />
             <a href="https://www.facebook.com/WagWelAdoption/"  target="_blank">
               <WWAIcon />
@@ -66,7 +66,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu Icon cho tablet (Hiển thị dưới md) */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <FaBars className="text-[#F9EDD2] text-2xl cursor-pointer" onClick={toggleMenu} />
           </div>
         </div>

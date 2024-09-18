@@ -13,34 +13,39 @@ export default function HomePage() {
             <div className='2xl:text-lg lg:text-base text-[10px]'>
                 <div className="bg-[#991B1E] px-2 md:px-20 py-5 ">
                     <h1 className=" text-3xl md:text-5xl uppercase text-center m-4 text-[#F9EDD2]">Our Brands</h1>
-                    
-                        <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl md:px-0 px-3">
-                            <div className="basis-5/12 md:basis-3/12 my-8 flex justify-center items-center" >
+
+                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-2xl lg:px-0 px-3">
+                        <div className="basis-5/12 lg:basis-3/12 my-8 flex justify-center items-center" >
+                            <a href="https://www.facebook.com/WagWelRescue/" target='_blank' className='flex justify-center items-center'>
                                 <img src="./images/Group.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
-                            </div>
-                            <div className="basis-7/12 md:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col  my-5">
-                                <p className='mb-3'> WagWel - we redefine rescue.</p>
-                                <p className='mb-3'> Established in 2019 in Vietnam, we are a social enterprise dedicated to the rescue and rehabilitation of stray dogs and cats.</p>
-                                <p className='mb-3'> We redefine rescue through an innovative model that brings accessibility, positivity, and sustainability to animal rescue.</p>
-                                <p> Our rescue cafes, adoption agency, and unique rescue brand are creating a more compassionate and secure future for companion animals in the communities we serve.</p>
-                            </div>
-                            <a href="https://www.facebook.com/WagWelRescue/" target='_blank'>
-                            <div className=" hidden md:basis-4/12 md:flex justify-center items-end">
-                                <img src="./images/Rectangle 148.png" alt="Person with tablet" className="group-hover:w-10/12 w-3/4 h-auto object-cover  transition-all duration-300" />
-                            </div>
                             </a>
                         </div>
-                    
+                        <div className="basis-7/12 lg:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col  my-5">
+                            <p className='mb-3'> WagWel - we redefine rescue.</p>
+                            <p className='mb-3'> Established in 2019 in Vietnam, we are a social enterprise dedicated to the rescue and rehabilitation of stray dogs and cats.</p>
+                            <p className='mb-3'> We redefine rescue through an innovative model that brings accessibility, positivity, and sustainability to animal rescue.</p>
+                            <p> Our rescue cafes, adoption agency, and unique rescue brand are creating a more compassionate and secure future for companion animals in the communities we serve.</p>
+                        </div>
+
+                        <div className=" hidden lg:basis-4/12 lg:flex">
+                            <a href="https://www.facebook.com/WagWelRescue/" target='_blank' className='flex justify-center items-end'>
+                                <img src="./images/Rectangle 148.png" alt="Person with tablet" className="group-hover:w-10/12 w-3/4 h-auto object-cover  transition-all duration-300" />
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="bg-[#AF1E3C] px-2 md:px-20 py-5  ">
 
-                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl md:px-0 px-3">
-                        <a href="https://www.facebook.com/WagWelAdoption/" target='_blank'>
-                            <div className=" hidden md:basis-4/12 md:flex justify-center items-end">
+                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-2xl lg:px-0 px-3">
+
+                        <div className=" hidden lg:basis-4/12 lg:flex">
+                            <a href="https://www.facebook.com/WagWelAdoption/" target='_blank' className='flex justify-center items-end'>
                                 <img src="./images/Rectangle 150.png" alt="Person with tablet" className=" group-hover:w-10/12 w-3/4 h-auto object-cover  transition-all duration-300" />
-                            </div>
-                        </a>
-                        <div className=" basis-7/12 md:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col my-5">
+                            </a>
+                        </div>
+
+                        <div className=" basis-7/12 lg:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col my-5">
                             <p className='mb-3'> Visit - Meet - Apply - Match!
                             </p>
                             <p className='mb-3'> We facilitate authentic adoptions and lifetime matches for stray dogs and cats in Vietnam.
@@ -52,19 +57,23 @@ export default function HomePage() {
                             <p>Since 2019 we have confirmed nearly 200 adoptions in partnership with local rescue shelters in Vietnam.
                             </p>
                         </div>
-                        <div className=" basis-5/12 md:basis-3/12 my-8 flex justify-center items-center" >
-                            <img src="./images/Group 80.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
+                        <div className=" basis-5/12 lg:basis-3/12 my-8 flex " >
+                            <a href="https://www.facebook.com/WagWelAdoption/" target='_blank' className='flex justify-center items-center'>
+                                <img src="./images/Group 80.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
+                            </a>
                         </div>
                     </div>
 
                 </div>
                 <div className="bg-[#B84626] px-2 md:px-20 py-5  ">
 
-                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl md:px-0 px-3">
-                        <div className="basis-5/12 md:basis-3/12 my-8 flex justify-center items-center" >
-                            <img src="./images/logo cho web-89 1.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
+                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-2xl lg:px-0 px-3">
+                        <div className="basis-5/12 lg:basis-3/12 my-8 flex " >
+                            <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank' className='flex justify-center items-center'>
+                                <img src="./images/logo cho web-89 1.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
+                            </a>
                         </div>
-                        <div className="  basis-7/12 md:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col  my-5">
+                        <div className="  basis-7/12 lg:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col  my-5">
                             <p className='mb-3'> Our flagship rescue cafe - home of the community rescue experience!
                             </p>
                             <p className='mb-3'> Located in a diverse and international neighborhood of Saigon, our 550 square meter space operates as a rescue dog cafe, educational center, community events space and off-leash dog park - welcoming over 40,000 guests per year and more than 2,000 of our community’s beloved dogs.
@@ -74,23 +83,27 @@ export default function HomePage() {
                             <p> We are proud to provide a uniquely positive rescue experience that stands out for all fo the right reasons.
                             </p>
                         </div>
-                        <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank'>
-                            <div className=" hidden md:basis-4/12 md:flex justify-end items-end">
-                                <img src="./images/Rectangle 152.png" alt="Person with tablet" className=" group-hover:w-11/12 w-10/12 h-auto object-cover  transition-all duration-300" />
-                            </div>
-                        </a>
+
+                        <div className=" hidden lg:basis-4/12 lg:flex">
+                            <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank' className='h-full flex justify-end items-end'>
+                                <img src="./images/Rectangle 152.png" alt="Person with tablet" className=" group-hover:w-full w-11/12 h-auto object-cover  transition-all duration-300" />
+                            </a>
+                        </div>
+
                     </div>
 
                 </div>
                 <div className="bg-[#BA6127] px-2 md:px-20 py-5  ">
 
-                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-xl md:px-0 px-3">
-                        <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
-                            <div className=" hidden md:basis-4/12 md:flex justify-start items-end">
+                    <div className="text-white bg-[#F9EDD2] flex flex-row flex-nowrap group rounded-2xl lg:px-0 px-3">
+
+                        <div className=" hidden lg:basis-4/12 lg:flex ">
+                            <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank' className='h-full flex justify-start items-end'>
                                 <img src="./images/Rectangle 151.png" alt="Person with tablet" className=" group-hover:w-10/12 w-3/4 h-auto object-cover  transition-all duration-300" />
-                            </div>
-                        </a>
-                        <div className=" basis-7/12 md:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col  my-5">
+                            </a>
+                        </div>
+
+                        <div className=" basis-7/12 lg:basis-5/12 text-[#991B1E] flex items-start justify-center flex-col  my-5">
                             <p className='mb-3'>Our sister brand of rescue cafes - a cat lover’s paradise!
                             </p>
                             <p className='mb-3'> A foster home for up to 25 rescue cats who are up for adoption, WagWel Feline is the perfect place to enjoy a snack and drink in the company of friendly felines!
@@ -100,8 +113,10 @@ export default function HomePage() {
                             <p> Hosting student clubs and educational events, we are increasing accesibility and awareness of animal rescue among Saigon’s young and young at heart!
                             </p>
                         </div>
-                        <div className=" basis-5/12 md:basis-3/12 my-8 flex justify-center items-center" >
-                            <img src="./images/logo cho web-88 1.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
+                        <div className=" basis-5/12 lg:basis-3/12 my-8 flex " >
+                            <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank' className='h-full flex justify-center items-center'>
+                                <img src="./images/logo cho web-88 1.png" alt="Person with tablet" className="w-7/12 h-auto object-cover" />
+                            </a>
                         </div>
                     </div>
 
