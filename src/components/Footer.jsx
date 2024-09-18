@@ -25,7 +25,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/WagWelRescue/" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
                   <FaFacebookF size={24} />
                 </a>
-                <a href="#" className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
+                <a href="https://www.instagram.com/wagwelrescue" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
                   <FaInstagram size={24} />
                 </a>
                 <a href="https://www.tiktok.com/@wagwelfeline" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
