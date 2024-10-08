@@ -80,7 +80,7 @@ export default function HomePage() {
                             </p>
                             <p className='mb-3'> A dog lover’s paradise, WagWel Canine is a foster home for up to 20 rescue dogs who are available for adoption. Meet and fall in love with our rescues in the most welcoming environment - cage free, off-leash, and open for guests of all ages - both 2 and 4-legged!
                             </p>
-                            <p> We are proud to provide a uniquely positive rescue experience that stands out for all fo the right reasons.
+                            <p> We are proud to provide a uniquely positive rescue experience that stands out for all of the right reasons.
                             </p>
                         </div>
 
@@ -110,7 +110,7 @@ export default function HomePage() {
                             </p>
                             <p className='mb-3'>Located in one of Saigon’s prominent university districts, WagWel Feline is youth- and student-centric, operating as an inclusive and welcoming collab space.
                             </p>
-                            <p> Hosting student clubs and educational events, we are increasing accesibility and awareness of animal rescue among Saigon’s young and young at heart!
+                            <p> Hosting student clubs and educational events, we are increasing accessibility and awareness of animal rescue among Saigon’s young and young at heart!
                             </p>
                         </div>
                         <div className=" basis-5/12 lg:basis-3/12 my-8 flex " >
