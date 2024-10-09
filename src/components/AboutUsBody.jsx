@@ -3,7 +3,7 @@ import React from 'react'
 function AboutUsBody() {
   return (
     <div>
-      <div className='bg-[url(./images/Ourmission.png)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3'>
+      <div className='bg-[url(/images/Ourmission.png)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3'>
         <div className='col-start-2 2xl:col-start-3 h-full w-full p-4 xl:px-12 xl:py-24 '>
           <div className='bg-[#F9EDD2] border-[#991B1E] border-2 rounded-2xl h-full w-full shadow-[10px_10px_0px_0px_#991B1E]'>
             <div className='h-full w-full p-8 flex flex-col text-[#991B1E] justify-evenly'>
