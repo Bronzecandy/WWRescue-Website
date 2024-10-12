@@ -20,9 +20,9 @@ const CustomNavigation = () => {
 
 const Carousel = () => {
   const slides = [
-    './images/Banner.png',
-    './images/Banner.png',
-    './images/Banner.png',
+    './images/Banner.webp',
+    './images/Banner.webp',
+    './images/Banner.webp',
   ];
 
   return (

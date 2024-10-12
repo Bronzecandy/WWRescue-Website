@@ -12,7 +12,7 @@ export default function SupportUs() {
                 <p>and socialize abandoned, traumatized dogs.
                 </p>
             </div>
-            <section className="relative w-full h-[300px] md:h-[700px] bg-cover bg-center " style={{ backgroundImage: "url('./images/image 4.png')" }}>
+            <section className="relative w-full h-[300px] md:h-[700px] bg-cover bg-center " style={{ backgroundImage: "url('./images/image 4.webp')" }}>
                 {/* Overlay for darkening the image slightly */}
                 <div className="absolute inset-0 bg-black opacity-30"></div>
 

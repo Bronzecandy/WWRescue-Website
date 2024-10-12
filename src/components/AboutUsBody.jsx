@@ -2,7 +2,7 @@ import React from 'react'
 function AboutUsBody() {
   return (
     <div>
-      <div className='bg-[url(/images/Ourmission.png)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-3 py-8 px-4 lg:px-12 lg:py-16'>
+      <div className='bg-[url(/images/Ourmission.webp)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-3 py-8 px-4 lg:px-12 lg:py-16'>
         <div className='col-start-2 col-span-2 xl:col-start-4 2xl:col-start-3 2xl:col-span-1 h-full w-full'>
           <div className='bg-[#F9EDD2] border-[#991B1E] border-2 rounded-2xl h-full w-full shadow-[10px_10px_0px_0px_#991B1E]'>
             <div className='h-full w-full p-4 xl:p-8 flex flex-col text-[#991B1E] justify-evenly'>
@@ -36,7 +36,7 @@ function AboutUsBody() {
           </div>
         </div>
       </div>
-      <div className='bg-[url(/images/About1.png)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-3 py-8 px-4 lg:px-12 lg:py-16'>
+      <div className='bg-[url(/images/About1.webp)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-3 py-8 px-4 lg:px-12 lg:py-16'>
         <div className='col-start-2 col-span-2 xl:col-start-4 2xl:col-start-3 2xl:col-span-1 h-full w-full '>
           <div className='bg-[#F9EDD2] border-[#991B1E] border-2 rounded-2xl h-full w-full shadow-[10px_10px_0px_0px_#991B1E]'>
             <div className='h-full w-full p-4 xl:p-8 flex flex-col text-[#991B1E] justify-evenly'>
