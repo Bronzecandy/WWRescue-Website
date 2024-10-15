@@ -1,7 +1,7 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { WWRIcon, WWAIcon, WWFIcon, WWCIcon } from './Icon';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icon từ react-icons
-import { Link,useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState('HOME');
@@ -12,7 +12,7 @@ const Navbar = () => {
       setActiveLink('HOME');
     } else if (location.pathname === '/About') {
       // Giả sử đường dẫn này dành cho About Us và Support Sustainable Rescue
-        setActiveLink('ABOUT US');
+      setActiveLink('ABOUT US');
     } else if (location.pathname === '/Support') {
       setActiveLink('SUPPORT SUSTAINABLE RESCUE');
     }
@@ -53,8 +53,7 @@ const Navbar = () => {
 
           {/* Icons Section - Ẩn trên tablet */}
           <div className="hidden lg:flex gap-4">
-            <WWRIcon />
-            <a href="https://www.facebook.com/WagWelAdoption/"  target="_blank">
+            <a href="https://www.facebook.com/WagWelAdoption/" target="_blank">
               <WWAIcon />
             </a>
             <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
@@ -81,9 +80,8 @@ const Navbar = () => {
 
         {/* Slide-in Menu từ bên phải (hiện khi nhấn vào icon menu) */}
         <div
-          className={`fixed top-0 right-0 w-64 h-full bg-[#991B1E] text-[#F9EDD2] p-4 transform transition-transform duration-300 z-20 ${
-            menuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+          className={`fixed top-0 right-0 w-64 h-full bg-[#991B1E] text-[#F9EDD2] p-4 transform transition-transform duration-300 z-20 ${menuOpen ? 'translate-x-0' : 'translate-x-full'
+            }`}
         >
           <div className="flex justify-end items-center">
             <FaTimes className="text-2xl cursor-pointer" onClick={toggleMenu} />
@@ -117,16 +115,15 @@ const Navbar = () => {
               SUPPORT SUSTAINABLE RESCUE
             </Link>
             <div className="flex gap-4 pt-4">
-              <WWRIcon />
-              <a href="https://www.facebook.com/WagWelAdoption/"  target="_blank">
-              <WWAIcon />
-            </a>
-            <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
-              <WWFIcon />
-            </a>
-            <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank'>
-              <WWCIcon />
-            </a>
+              <a href="https://www.facebook.com/WagWelAdoption/" target="_blank">
+                <WWAIcon />
+              </a>
+              <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
+                <WWFIcon />
+              </a>
+              <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank'>
+                <WWCIcon />
+              </a>
             </div>
           </nav>
         </div>

@@ -2,6 +2,16 @@ import React from 'react'
 function AboutUsBody() {
   return (
     <div>
+      <div className='flex flex-col items-center text-center py-8 xl:py-16 2xl:py-24  bg-[#F9EDD2] bg-[url(/images/Background.webp)] bg-contain bg-no-repeat bg-center text-lg sm:text-xl min-[2000px]:text-3xl text-[#991B1E]'>
+        <div className='w-10/12 flex flex-col items-center gap-4 xl:gap-8'>
+          <p>At WagWel, every visit and every purchase is purposeful and carries a meaning full of love. </p>
+          <p>With every visit and act of support at WagWel - whether in person or online - our community is actively contributing
+          to the care and rehabilitation of rescue dogs and cats. </p>
+          <p>Furthermore, each action further spreads our mission of supporting the entire dog and cat rescue ecosystem in Vietnam. </p>
+          <p>By being a part of the WagWel community, you are actually taking part in life-changing work with us!</p>
+          <p>Get to know more about who we are, how our story started, and where we are going by scrolling below!</p>
+        </div>
+      </div>
       <div className='bg-[url(/images/Ourmission.webp)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-3 py-8 px-4 lg:px-12 lg:py-16'>
         <div className='col-start-2 col-span-2 xl:col-start-4 2xl:col-start-3 2xl:col-span-1 h-full w-full'>
           <div className='bg-[#F9EDD2] border-[#991B1E] border-2 rounded-2xl h-full w-full shadow-[10px_10px_0px_0px_#991B1E]'>

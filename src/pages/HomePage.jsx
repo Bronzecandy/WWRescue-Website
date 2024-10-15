@@ -9,7 +9,9 @@ export default function HomePage() {
         <>
             <Navbar></Navbar>
             <Carousel></Carousel>
-            <img src='./images/WWR.gif' ></img>
+            <video autoPlay loop muted playsInline className='w-full'>
+                <source src="./images/gif.webm" type="video/mp4" alt='gif'/>
+            </video>
             <div className='2xl:text-lg lg:text-base text-[10px]'>
                 <div className="bg-[#991B1E] px-2 md:px-20 py-5 ">
                     <h1 className=" text-3xl md:text-5xl uppercase text-center m-4 text-[#F9EDD2]">Our Brands</h1>
