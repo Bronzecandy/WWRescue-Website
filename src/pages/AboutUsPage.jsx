@@ -6,9 +6,9 @@ function AboutUsPage() {
   return (
     <div>
       <Navbar />
-      <img src='./images/Group 126.webp' className='h-full w-full object-cover'></img>
+      <img src='./images/Group 126.webp' className='h-full w-full object-cover' alt='AboutBanner' ></img>
       <AboutUsBody />
-      <Footer />
+      <Footer color='#991B1E' logo='./images/Logo-big.png'/>
     </div>
   )
 }

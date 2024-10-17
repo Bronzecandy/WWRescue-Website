@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import DogCarousel from './DogCarousel';
 import PartnerCarousel from './PartnerCarousel';
 import ComingSoonDialog from './ComingSoonDialog';
-export default function OurRescue() {
+export default function OurRescue({color}) {
+  const buttonClass = color === '#991B1E' 
+    ? 'bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] text-[#991B1E] border-[#991B1E]' 
+    : color === '#AF1E3C' 
+    ? 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]' 
+    : 'bg-gray-500 hover:bg-gray-700';
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const dogs = [
     {
@@ -261,16 +266,18 @@ export default function OurRescue() {
     }, 
   ];
   return (
-    <div className='bg-[#F9EDD2] py-16 px-8'>
+    <div className='bg-[#F9EDD2] py-8 px-8'>
       <div>
         <div className="text-center  md:text-lg text-xs">
-          <h1 className="text-3xl md:text-5xl mb-4  text-[#991B1E]">OUR RESCUES</h1>
-          <h2 className="text-3xl text-[#F08122] font-semibold py-5">
+          <h1 className="text-3xl md:text-5xl mb-4" style={{
+            color:color
+          }}>OUR RESCUES</h1>
+          <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">
             CANINE </h2>
         </div>
-        <DogCarousel backgroundImage="url('./images/Rectangle 128.png')" input={dogs}></DogCarousel>
+        <DogCarousel backgroundImage="url('./images/Rectangle 128.png')" input={dogs} color={color}></DogCarousel>
         <div className='flex justify-center py-4'>
-          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition"
+          <button className={`${buttonClass} md:w-52 border-2 border-solid py-2 px-6 rounded-full transition`}
             onClick={() => setIsDialogOpen(true)}>
             MORE DETAIL
           </button>
@@ -279,12 +286,12 @@ export default function OurRescue() {
 
       <div>
         <div className="text-center py-5 md:text-lg text-xs">
-          <h2 className="text-3xl text-[#FAA627] font-semibold">
+          <h2 className="text-xl md:text-3xl text-[#FAA627] font-semibold">
             FELINE </h2>
         </div>
-        <DogCarousel backgroundImage="url('./images/MBackground.png')" input={cats}></DogCarousel>
+        <DogCarousel backgroundImage="url('./images/MBackground.png')" input={cats} color={color}></DogCarousel>
         <div className='flex justify-center py-4'>
-          <button className="bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] md:w-52 text-[#991B1E] border-2 border-solid border-[#991B1E]  py-2 px-6 rounded-full transition"
+          <button className={`${buttonClass} md:w-52 border-2 border-solid py-2 px-6 rounded-full transition`}
             onClick={() => setIsDialogOpen(true)}>
             MORE DETAIL
           </button>
@@ -294,13 +301,6 @@ export default function OurRescue() {
         isOpen={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       />
-      <div className='border-2 border-[#991B1E] rounded-xl'>
-        <div className="text-center py-5 md:text-lg text-xs">
-          <h1 className="text-5xl text-[#991B1E]">
-            OUR PARTNERS </h1>
-        </div>
-        <PartnerCarousel backgroundImage="url('./images/MBackground.png')"></PartnerCarousel>
-      </div>
     </div>
 
   )

@@ -4,6 +4,7 @@ import Carousel from '../components/Caroutsel'
 import Footer from '../components/Footer'
 import SupportUs from '../components/SupportUs'
 import OurRescue from '../components/OurRescue'
+import OurPartner from '../components/OurPartner'
 export default function HomePage() {
     return (
         <>
@@ -124,9 +125,10 @@ export default function HomePage() {
 
                 </div>
             </div>
-            <OurRescue></OurRescue>
-            <SupportUs></SupportUs>
-            <Footer></Footer>
+            <OurRescue color='#991B1E'></OurRescue>
+            <OurPartner color='#991B1E'></OurPartner>
+            <SupportUs color='#991B1E'></SupportUs>
+            <Footer color='#991B1E' logo='./images/Logo-big.png'></Footer>
         </>
     )
 }

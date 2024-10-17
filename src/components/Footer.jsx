@@ -2,14 +2,16 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({color,logo}) => {
   return (
-    <footer className="bg-[#991B1E] text-[#F9EDD2] py-8 px-4">
+    <footer className="text-[#F9EDD2] py-8 px-4" style={{
+      backgroundColor:color,
+    }}>
       <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo Section */}
         <div className="flex flex-col mb-6 md:mb-0">
           <img
-            src="./images/Logo-big.png"
+            src={logo}
             alt="WAG WEL RESCUE Logo"
             className=" w-32 md:w-72 h-auto" // Adjust width and height as needed
           />

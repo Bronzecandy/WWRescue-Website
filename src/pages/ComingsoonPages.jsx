@@ -1,14 +1,20 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-export default function ComingsoonPages() {
+import WWANavbar from '../components/WWANavbar'
+export default function ComingsoonPages({color}) {
+    console.log(color)
+    const logo = color === '#991B1E' ? '/images/Logo-big.png' : color === '#AF1E3C' ? '/images/Group.webp' : '';
+    console.log(logo)
     return (
         <>
-            <Navbar />
+             {color === '#991B1E' ? <Navbar /> : color === '#AF1E3C' ? <WWANavbar /> : null}
             <div className="bg-[#F9EDD2] flex items-center justify-center h-screen">
-                <h1 className="text-[#991B1E] text-4xl font-bold">Coming Soon</h1>
+                <h1 className="text-4xl font-bold" style={{
+                    color:color,
+                }}>Coming Soon</h1>
             </div>
-            <Footer/>
+            <Footer color={color} logo={logo}/>
         </>
     )
 }

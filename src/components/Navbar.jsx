@@ -22,7 +22,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="bg-[#991B1E] fixed w-full z-20">
+      <header className="bg-[#991B1E] fixed w-full z-20 border-b border-[#F9EDD2]">
         <div className="flex items-center justify-between p-4">
           {/* Logo Section */}
           <Link to="/" className="flex">
@@ -53,9 +53,9 @@ const Navbar = () => {
 
           {/* Icons Section - Ẩn trên tablet */}
           <div className="hidden lg:flex gap-4">
-            <a href="https://www.facebook.com/WagWelAdoption/" target="_blank">
+            <Link to="/WWAHome">
               <WWAIcon />
-            </a>
+            </Link>
             <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
               <WWFIcon />
             </a>
@@ -115,9 +115,9 @@ const Navbar = () => {
               SUPPORT SUSTAINABLE RESCUE
             </Link>
             <div className="flex gap-4 pt-4">
-              <a href="https://www.facebook.com/WagWelAdoption/" target="_blank">
+              <Link to="/WWAHome">
                 <WWAIcon />
-              </a>
+              </Link>
               <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
                 <WWFIcon />
               </a>

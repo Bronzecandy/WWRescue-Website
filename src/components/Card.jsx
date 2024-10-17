@@ -23,7 +23,7 @@ const DogCard = ({ image, subnames, gender, color, backgroundImage, name }) => {
       </div>
 
       {/* Content Section */}
-      <div className="p-6 text-center border-2 rounded-b-lg flex-1"
+      <div className="p-6 text-center border-2 rounded-b-lg flex-1 bg-[#F9EDD2]"
         style={{
           borderColor: color,
           color: color,
