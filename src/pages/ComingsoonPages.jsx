@@ -3,9 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import WWANavbar from '../components/WWANavbar'
 export default function ComingsoonPages({color}) {
-    console.log(color)
     const logo = color === '#991B1E' ? '/images/Logo-big.png' : color === '#AF1E3C' ? '/images/Group.webp' : '';
-    console.log(logo)
     return (
         <>
              {color === '#991B1E' ? <Navbar /> : color === '#AF1E3C' ? <WWANavbar /> : null}
