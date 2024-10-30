@@ -127,7 +127,7 @@ export default function HomePage() {
             </div>
             <OurRescue color='#991B1E'></OurRescue>
             <OurPartner color='#991B1E'></OurPartner>
-            <SupportUs color='#991B1E'></SupportUs>
+            <SupportUs color='#991B1E' bg="url('./images/image 4.webp')"></SupportUs>
             <Footer color='#991B1E' logo='./images/Logo-big.png'></Footer>
         </>
     )

@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function SupportUs({color}) {
+export default function SupportUs({color,bg}) {
     const buttonClass = color === '#991B1E' 
     ? 'bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] text-[#991B1E] border-[#991B1E]' 
     : color === '#AF1E3C' 
     ? 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]' 
-    : 'bg-gray-500 hover:bg-gray-700';
+    : color === '#F08122' 
+    ? 'bg-[#F9EDD2] hover:bg-[#F08122] hover:text-[#F9EDD2] text-[#F08122] border-[#F08122]'
+    : 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]';
 
     return (
         <div>
@@ -20,7 +22,7 @@ export default function SupportUs({color}) {
                 <p>and socialize abandoned, traumatized dogs.
                 </p>
             </div>
-            <section className="relative w-full h-[300px] md:h-[700px] bg-cover bg-center " style={{ backgroundImage: "url('./images/image 4.webp')" }}>
+            <section className="relative w-full h-[300px] md:h-[700px] bg-cover bg-center " style={{ backgroundImage: bg}}>
                 {/* Overlay for darkening the image slightly */}
                 <div className="absolute inset-0 bg-black opacity-30"></div>
 

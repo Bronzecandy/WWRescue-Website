@@ -53,15 +53,18 @@ const Navbar = () => {
 
           {/* Icons Section - Ẩn trên tablet */}
           <div className="hidden lg:flex gap-4">
+            <Link to="/">
+              <WWRIcon active={true}></WWRIcon>
+            </Link>
             <Link to="/WWAHome">
               <WWAIcon />
             </Link>
             <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
               <WWFIcon />
             </a>
-            <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank'>
+            <Link to='/WWCHome'>
               <WWCIcon />
-            </a>
+            </Link>
           </div>
 
           {/* Menu Icon cho tablet (Hiển thị dưới md) */}
@@ -115,15 +118,18 @@ const Navbar = () => {
               SUPPORT SUSTAINABLE RESCUE
             </Link>
             <div className="flex gap-4 pt-4">
+              <Link to="/">
+                <WWRIcon active={true}></WWRIcon>
+              </Link>
               <Link to="/WWAHome">
                 <WWAIcon />
               </Link>
               <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
                 <WWFIcon />
               </a>
-              <a href="https://www.facebook.com/WagWelSaigonCanine/" target='_blank'>
+              <Link to='/WWCHome'>
                 <WWCIcon />
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

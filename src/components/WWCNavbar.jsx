@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { WWAIcon, WWFIcon, WWCIcon, WWRIcon } from './Icon';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icon từ react-icons
 import { Link, useLocation } from 'react-router-dom';
-const WWANavbar = () => {
+const WWCNavbar = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState('HOME');
   const [menuOpen, setMenuOpen] = useState(false); // Trạng thái của menu
 
   useEffect(() => {
-    if (location.pathname === '/WWAHome') {
+    if (location.pathname === '/WWCHome') {
       setActiveLink('HOME');
-    } else if (location.pathname === '/WWAHome/About') {
+    } else if (location.pathname === '/WWCHome/About') {
       // Giả sử đường dẫn này dành cho About Us và Support Sustainable Rescue
       setActiveLink('ABOUT US');
-    } else if (location.pathname === '/WWAHome/Support') {
+    } else if (location.pathname === '/WWCHome/Support') {
       setActiveLink('SUPPORT SUSTAINABLE RESCUE');
     }
   }, [location]);
@@ -22,29 +22,29 @@ const WWANavbar = () => {
   };
   return (
     <>
-      <header className="bg-[#AF1E3C] fixed w-full z-20 border-b border-[#F9EDD2]">
+      <header className="bg-[#F08122] fixed w-full z-20 border-b border-[#F9EDD2]">
         <div className="flex items-center justify-between p-4">
           {/* Logo Section */}
           <Link to="/WWAhome" className="flex">
-            <img src="/images/Group 154.webp" alt="Wagwell Rescue" className="h-14" />
+            <img src="/images/WWCLogo.webp" alt="Wagwell Rescue" className="h-14" />
           </Link>
 
           {/* Navigation Links - Ẩn trên tablet */}
           <nav className="hidden lg:flex gap-6 text-xs lg:text-base">
             <Link
-              to="/WWAHome"
+              to="/WWCHome"
               className={`text-[#F9EDD2] ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
               HOME
             </Link>
             <Link
-              to="/WWAHome/About"
+              to="/WWCHome/About"
               className={`text-[#F9EDD2] ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
               ABOUT US
             </Link>
             <Link
-              to="/WWAHome/Support"
+              to="/WWCHome/Support"
               className={`text-[#F9EDD2] ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
               OUR RESCUE
@@ -57,13 +57,13 @@ const WWANavbar = () => {
               <WWRIcon></WWRIcon>
             </Link>
             <Link to="/WWAHome">
-              <WWAIcon active={true}/>
+              <WWAIcon />
             </Link>
             <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
               <WWFIcon />
             </a>
             <Link to='/WWCHome'>
-              <WWCIcon />
+              <WWCIcon  active={true}/>
             </Link>
           </div>
 
@@ -91,7 +91,7 @@ const WWANavbar = () => {
           </div>
           <nav className="mt-4">
             <Link
-              to="/WWAHome"
+              to="/WWCHome"
               className={`block py-2 ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
@@ -100,7 +100,7 @@ const WWANavbar = () => {
               HOME
             </Link>
             <Link
-              to="/WWAHome/About"
+              to="/WWCHome/About"
               className={`block py-2 ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
@@ -109,7 +109,7 @@ const WWANavbar = () => {
               ABOUT US
             </Link>
             <Link
-              to="/WWAHome/Support"
+              to="/WWCHome/Support"
               className={`block py-2 ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
@@ -122,23 +122,23 @@ const WWANavbar = () => {
                 <WWRIcon></WWRIcon>
               </Link>
               <Link to="/WWAHome">
-                <WWAIcon active={true}/>
+                <WWAIcon />
               </Link>
               <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
                 <WWFIcon />
               </a>
               <Link to='/WWCHome'>
-                <WWCIcon />
+                <WWCIcon active={true}/>
               </Link>
             </div>
           </nav>
         </div>
       </header>
 
-      {/* Padding to prevent content from being hidden behind the WWANavbar */}
+      {/* Padding to prevent content from being hidden behind the WWCNavbar */}
       <div className="h-16 md:h-0"></div>
     </>
   );
 };
 
-export default WWANavbar;
+export default WWCNavbar;

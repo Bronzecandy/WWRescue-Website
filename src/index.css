@@ -25,7 +25,7 @@ h1{
 }
 /* Đặt trong tệp CSS */
 .card:hover {
-  box-shadow: 0 4px 16px 2px var(--hover-color);
+  box-shadow: 0 0 10px 1px var(--hover-color);
 }
 
 @tailwind base;

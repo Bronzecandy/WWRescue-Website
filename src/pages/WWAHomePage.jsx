@@ -14,7 +14,7 @@ function WWAHomePage() {
         <OurRescue color='#AF1E3C'></OurRescue>
         <AdoptionProcessPart></AdoptionProcessPart>
         <OurPartner color='#AF1E3C'></OurPartner>
-        <SupportUs color='#AF1E3C'></SupportUs>
+        <SupportUs color='#AF1E3C' bg="url('./images/image 4.webp')"></SupportUs>
         <Footer color='#AF1E3C' logo='./images/Group.webp'></Footer>
     </div>
   )

@@ -14,7 +14,7 @@ function AdoptionProcessPart() {
                         <h1><span className='text-5xl xl:text-7xl'>1.</span> Adoption applications</h1>
                         <h1><span className='text-5xl xl:text-7xl'>2.</span> Fill out the application form</h1>
                         <h1><span className='text-5xl xl:text-7xl'>3.</span> Confirm Adoption & Support More Rescues!</h1>
-                        <button class="bg-[#F9EDD2] hover:bg-[#AF1E3C] text-base hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C] border-2 border-solid py-2 px-6 rounded-full transition">MORE DETAIL</button>
+                        <button className="bg-[#F9EDD2] hover:bg-[#AF1E3C] text-base hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C] border-2 border-solid py-2 px-6 rounded-full transition">MORE DETAIL</button>
                     </div>
                 </div>
             </div>

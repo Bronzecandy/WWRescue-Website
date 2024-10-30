@@ -2,7 +2,7 @@ import React from 'react'
 import PartnerCarousel from './PartnerCarousel'
 function OurPartner({color}) {
   return (
-    <div className='bg-[#F9EDD2] py-8 px-8'>
+    <div className='bg-[#F9EDD2] py-8 md:px-8'>
         <div className='border-2 rounded-xl' style={{
         borderColor:color,
       }}>

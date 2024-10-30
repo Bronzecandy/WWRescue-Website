@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import ComingsoonPages from "./pages/ComingsoonPages";
 import AboutUsPage from "./pages/AboutUsPage";
 import WWAHomePage from "./pages/WWAHomePage";
+import WWCHomepage from "./pages/WWCHomepage";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -17,6 +18,9 @@ function App() {
         <Route path="/WWAHome" element={<WWAHomePage/>} />
         <Route path="/WWAHome/About" element={<ComingsoonPages color="#AF1E3C"/>} />
         <Route path="/WWAHome/Support" element={<ComingsoonPages color="#AF1E3C"/>} />
+        <Route path="/WWCHome" element={<WWCHomepage/>}></Route>
+        <Route path="/WWCHome/About" element={<ComingsoonPages color="#F08122"/>} />
+        <Route path="/WWCHome/Support" element={<ComingsoonPages color="#F08122"/>} />
         <Route path="/Support" element={<ComingsoonPages color="#991B1E"/>} />
       </Routes>
     </Router>

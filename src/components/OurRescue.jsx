@@ -7,7 +7,9 @@ export default function OurRescue({color}) {
     ? 'bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] text-[#991B1E] border-[#991B1E]' 
     : color === '#AF1E3C' 
     ? 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]' 
-    : 'bg-gray-500 hover:bg-gray-700';
+    : color === '#F08122' 
+    ? 'bg-[#F9EDD2] hover:bg-[#F08122] hover:text-[#F9EDD2] text-[#F08122] border-[#F08122]'
+    : 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]';
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const dogs = [
     {
@@ -266,7 +268,7 @@ export default function OurRescue({color}) {
     }, 
   ];
   return (
-    <div className='bg-[#F9EDD2] py-8 px-8'>
+    <div className='bg-[#F9EDD2] py-8 md:px-2 lg:px-8'>
       <div>
         <div className="text-center  md:text-lg text-xs">
           <h1 className="text-3xl md:text-5xl mb-4" style={{

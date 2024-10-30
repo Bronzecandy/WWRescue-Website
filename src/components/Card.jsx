@@ -3,7 +3,7 @@ import { MenIcon, WomenIcon } from './Icon';
 const DogCard = ({ image, subnames, gender, color, backgroundImage, name }) => {
   return (
     <div
-      className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white transition-shadow duration-300 card w-full lg:w-8/12 flex flex-col"
+      className="rounded-lg overflow-hidden shadow-lg bg-white transition-shadow duration-300 card w-full flex flex-col"
       style={{
         '--hover-color': color, // Định nghĩa biến màu trong inline style
       }}
