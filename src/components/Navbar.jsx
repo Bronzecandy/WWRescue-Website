@@ -59,9 +59,9 @@ const Navbar = () => {
             <Link to="/WWAHome">
               <WWAIcon />
             </Link>
-            <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
+            <Link to="/WWFHome">
               <WWFIcon />
-            </a>
+            </Link>
             <Link to='/WWCHome'>
               <WWCIcon />
             </Link>
@@ -124,9 +124,9 @@ const Navbar = () => {
               <Link to="/WWAHome">
                 <WWAIcon />
               </Link>
-              <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
+              <Link to="/WWFHome">
                 <WWFIcon />
-              </a>
+              </Link>
               <Link to='/WWCHome'>
                 <WWCIcon />
               </Link>

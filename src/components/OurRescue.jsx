@@ -9,7 +9,9 @@ export default function OurRescue({ color, type }) {
       ? 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]'
       : color === '#F08122'
         ? 'bg-[#F9EDD2] hover:bg-[#F08122] hover:text-[#F9EDD2] text-[#F08122] border-[#F08122]'
-        : 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]';
+        : color === '#FAA627'
+          ? 'bg-[#F9EDD2] hover:bg-[#FAA627] hover:text-[#F9EDD2] text-[#FAA627] border-[#FAA627]'
+          : 'bg-[#F9EDD2] hover:bg-[#FAA627] hover:text-[#F9EDD2] text-[#FAA627] border-[#FAA627]';
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const dogs = [
     {

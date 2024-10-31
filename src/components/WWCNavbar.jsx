@@ -25,7 +25,7 @@ const WWCNavbar = () => {
       <header className="bg-[#F08122] fixed w-full z-20 border-b border-[#F9EDD2]">
         <div className="flex items-center justify-between p-4">
           {/* Logo Section */}
-          <Link to="/WWAhome" className="flex">
+          <Link to="/WWChome" className="flex">
             <img src="/images/WWCLogo.webp" alt="Wagwell Rescue" className="h-14" />
           </Link>
 
@@ -59,11 +59,11 @@ const WWCNavbar = () => {
             <Link to="/WWAHome">
               <WWAIcon />
             </Link>
-            <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
+            <Link to="/WWFHome">
               <WWFIcon />
-            </a>
+            </Link>
             <Link to='/WWCHome'>
-              <WWCIcon  active={true}/>
+              <WWCIcon active={true} />
             </Link>
           </div>
 
@@ -124,11 +124,11 @@ const WWCNavbar = () => {
               <Link to="/WWAHome">
                 <WWAIcon />
               </Link>
-              <a href="https://www.facebook.com/WagWelSaigonFeline/" target='_blank'>
+              <Link to="/WWFHome">
                 <WWFIcon />
-              </a>
+              </Link>
               <Link to='/WWCHome'>
-                <WWCIcon active={true}/>
+                <WWCIcon active={true} />
               </Link>
             </div>
           </nav>
