@@ -21,51 +21,7 @@ const CustomNavigation = ({color}) => {
     );
 };
 
-const PartnerCarousel = ({color}) => {
-    const slides = [
-        {
-            imageUrl: './images/royalcanin.png',
-            description: 'Educational Event Partner'
-        },
-        {
-            imageUrl: './images/catfee.png',
-            description: 'Organic Cat Litter Sponsor'
-        },
-        {
-            imageUrl: './images/Tito.png',
-            description: 'Beverage & Rescue Partner'
-        },
-        {
-            imageUrl: './images/Vemedin.png',
-            description: 'Dog & Cat Medicine Sponsor'
-        },
-        {
-            imageUrl: './images/Keos.png',
-            description: 'Shelter Support Partner'
-        },
-        {
-            imageUrl: './images/Insta360.png',
-            description: 'Pet Action Camera Sponsor'
-        },
-        {
-            imageUrl: './images/Kingpet.png',
-            description: 'Fresh Cat Pate Sponsor'
-        },
-        {
-            imageUrl: './images/Levoit.png',
-            description: 'Pet Air Filters Sponsor'
-        },
-        {
-            imageUrl: './images/GFBPharma.png',
-            description: 'Cat & Dog Medicine Partner'
-        },
-        {
-            imageUrl: './images/Roborock.png',
-            description: 'Pet Cleaning Appliances Sponsor'
-        },
-    ];
-
-
+const PartnerCarousel = ({color, partners}) => {
     return (
         <div className='pb-10'>
             <Swiper
@@ -91,9 +47,13 @@ const PartnerCarousel = ({color}) => {
                         slidesPerView: 5,
                         spaceBetween: 0,
                     },
+                    3840: {
+                        slidesPerView: 7,
+                        spaceBetween: 0,
+                    },
                 }}
             >
-                {slides.map((slide, index) => (
+                {partners.map((slide, index) => (
                     <SwiperSlide key={index} style={{ height: 'auto' }} className='flex justify-center'>
                         <PartnerCard
                             imageUrl={slide.imageUrl}

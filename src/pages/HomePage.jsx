@@ -6,6 +6,48 @@ import SupportUs from '../components/SupportUs'
 import OurRescue from '../components/OurRescue'
 import OurPartner from '../components/OurPartner'
 export default function HomePage() {
+    const partners = [
+        {
+            imageUrl: './images/royalcanin.png',
+            description: 'Educational Event Partner'
+        },
+        {
+            imageUrl: './images/catfee.png',
+            description: 'Organic Cat Litter Sponsor'
+        },
+        {
+            imageUrl: './images/Tito.png',
+            description: 'Beverage & Rescue Partner'
+        },
+        {
+            imageUrl: './images/Vemedin.png',
+            description: 'Dog & Cat Medicine Sponsor'
+        },
+        {
+            imageUrl: './images/Keos.png',
+            description: 'Shelter Support Partner'
+        },
+        {
+            imageUrl: './images/Insta360.png',
+            description: 'Pet Action Camera Sponsor'
+        },
+        {
+            imageUrl: './images/Kingpet.png',
+            description: 'Fresh Cat Pate Sponsor'
+        },
+        {
+            imageUrl: './images/Levoit.png',
+            description: 'Pet Air Filters Sponsor'
+        },
+        {
+            imageUrl: './images/GFBPharma.png',
+            description: 'Cat & Dog Medicine Partner'
+        },
+        {
+            imageUrl: './images/Roborock.png',
+            description: 'Pet Cleaning Appliances Sponsor'
+        },
+    ];
     return (
         <>
             <Navbar></Navbar>
@@ -126,7 +168,7 @@ export default function HomePage() {
                 </div>
             </div>
             <OurRescue color='#991B1E'></OurRescue>
-            <OurPartner color='#991B1E'></OurPartner>
+            <OurPartner color='#991B1E' partners={partners}></OurPartner>
             <SupportUs color='#991B1E' bg="url('./images/image 4.webp')"></SupportUs>
             <Footer color='#991B1E' logo='./images/Logo-big.png'></Footer>
         </>

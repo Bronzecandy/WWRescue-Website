@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import DogCarousel from './DogCarousel';
 import PartnerCarousel from './PartnerCarousel';
 import ComingSoonDialog from './ComingSoonDialog';
-export default function OurRescue({color}) {
-  const buttonClass = color === '#991B1E' 
-    ? 'bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] text-[#991B1E] border-[#991B1E]' 
-    : color === '#AF1E3C' 
-    ? 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]' 
-    : color === '#F08122' 
-    ? 'bg-[#F9EDD2] hover:bg-[#F08122] hover:text-[#F9EDD2] text-[#F08122] border-[#F08122]'
-    : 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]';
+export default function OurRescue({ color, type }) {
+  const buttonClass = color === '#991B1E'
+    ? 'bg-[#F9EDD2] hover:bg-[#991B1E] hover:text-[#F9EDD2] text-[#991B1E] border-[#991B1E]'
+    : color === '#AF1E3C'
+      ? 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]'
+      : color === '#F08122'
+        ? 'bg-[#F9EDD2] hover:bg-[#F08122] hover:text-[#F9EDD2] text-[#F08122] border-[#F08122]'
+        : 'bg-[#F9EDD2] hover:bg-[#AF1E3C] hover:text-[#F9EDD2] text-[#AF1E3C] border-[#AF1E3C]';
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const dogs = [
     {
@@ -265,17 +265,17 @@ export default function OurRescue({color}) {
       name: 'Mulder',
       subname: ['Mún Đơ.', 'Round face with slim body.', 'Bites you after you pet his head.'],
       gender: 'male',
-    }, 
+    },
   ];
   return (
     <div className='bg-[#F9EDD2] py-8 md:px-2 lg:px-8'>
-      <div>
+      <h1 className="text-3xl md:text-5xl mb-4 text-center" style={{
+        color: color
+      }}>OUR RESCUES {type === 'dog' ? 'DOG' : type === 'cat' ? 'CAT' : ''}</h1>
+      {type === 'cat' ? null : <div>
         <div className="text-center  md:text-lg text-xs">
-          <h1 className="text-3xl md:text-5xl mb-4" style={{
-            color:color
-          }}>OUR RESCUES</h1>
-          <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">
-            CANINE </h2>
+          {type === 'dog' || type === 'cat' ? null : <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">
+            CANINE </h2>}
         </div>
         <DogCarousel backgroundImage="url('./images/Rectangle 128.png')" input={dogs} color={color}></DogCarousel>
         <div className='flex justify-center py-4'>
@@ -284,12 +284,12 @@ export default function OurRescue({color}) {
             MORE DETAIL
           </button>
         </div>
-      </div>
+      </div>}
 
-      <div>
+      {type === 'dog' ? null : <div>
         <div className="text-center py-5 md:text-lg text-xs">
-          <h2 className="text-xl md:text-3xl text-[#FAA627] font-semibold">
-            FELINE </h2>
+          {type === 'dog' || type === 'cat' ? null : <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">
+            FELINE </h2>}
         </div>
         <DogCarousel backgroundImage="url('./images/MBackground.png')" input={cats} color={color}></DogCarousel>
         <div className='flex justify-center py-4'>
@@ -298,7 +298,7 @@ export default function OurRescue({color}) {
             MORE DETAIL
           </button>
         </div>
-      </div>
+      </div>}
       <ComingSoonDialog
         isOpen={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}

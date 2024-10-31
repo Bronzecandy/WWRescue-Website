@@ -70,6 +70,10 @@ const DogCarousel = ({ backgroundImage, input, color }) => {
                         slidesPerView: 6,
                         spaceBetween: 20,
                     },
+                    3840: {
+                        slidesPerView: 7.5,
+                        spaceBetween: 20,
+                    },
                 }}
             >
                 {input.map((slide, index) => (

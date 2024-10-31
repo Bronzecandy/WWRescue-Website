@@ -83,7 +83,7 @@ const WWCNavbar = () => {
 
         {/* Slide-in Menu từ bên phải (hiện khi nhấn vào icon menu) */}
         <div
-          className={`fixed top-0 right-0 w-64 h-full bg-[#AF1E3C] text-[#F9EDD2] p-4 transform transition-transform duration-300 z-20 ${menuOpen ? 'translate-x-0' : 'translate-x-full'
+          className={`fixed top-0 right-0 w-64 h-full bg-[#F08122] text-[#F9EDD2] p-4 transform transition-transform duration-300 z-20 ${menuOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
         >
           <div className="flex justify-end items-center">
@@ -117,7 +117,7 @@ const WWCNavbar = () => {
             >
               SUPPORT SUSTAINABLE RESCUE
             </Link>
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 flex-wrap">
               <Link to="/">
                 <WWRIcon></WWRIcon>
               </Link>
@@ -136,7 +136,7 @@ const WWCNavbar = () => {
       </header>
 
       {/* Padding to prevent content from being hidden behind the WWCNavbar */}
-      <div className="h-16 md:h-0"></div>
+      <div className="h-20 "></div>
     </>
   );
 };

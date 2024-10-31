@@ -117,7 +117,7 @@ const Navbar = () => {
             >
               SUPPORT SUSTAINABLE RESCUE
             </Link>
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 flex-wrap">
               <Link to="/">
                 <WWRIcon active={true}></WWRIcon>
               </Link>

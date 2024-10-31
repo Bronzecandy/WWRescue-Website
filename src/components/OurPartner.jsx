@@ -1,6 +1,6 @@
 import React from 'react'
 import PartnerCarousel from './PartnerCarousel'
-function OurPartner({color}) {
+function OurPartner({color,partners}) {
   return (
     <div className='bg-[#F9EDD2] py-8 md:px-8'>
         <div className='border-2 rounded-xl' style={{
@@ -12,7 +12,7 @@ function OurPartner({color}) {
           }}>
             OUR PARTNERS </h1>
         </div>
-        <PartnerCarousel color={color}></PartnerCarousel>
+        <PartnerCarousel color={color} partners={partners}></PartnerCarousel>
       </div>
     </div>
   )
