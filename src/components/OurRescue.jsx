@@ -289,10 +289,11 @@ export default function OurRescue({ color, type }) {
       </div>}
 
       {type === 'dog' ? null : <div>
+        {type === 'dog' || type === 'cat' ? null :
         <div className="text-center py-5 md:text-lg text-xs">
-          {type === 'dog' || type === 'cat' ? null : <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">
-            FELINE </h2>}
-        </div>
+           <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">
+            FELINE </h2>
+        </div>}
         <DogCarousel backgroundImage="url('./images/MBackground.png')" input={cats} color={color}></DogCarousel>
         <div className='flex justify-center py-4'>
           <button className={`${buttonClass} md:w-52 border-2 border-solid py-2 px-6 rounded-full transition`}
