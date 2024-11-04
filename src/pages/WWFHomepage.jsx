@@ -49,13 +49,16 @@ function WWFHomepage() {
   ];
   return (
     <div>
-        <WWFNavbar></WWFNavbar>
-        <div className="w-full h-[calc(100vh-5rem)] bg-[url('/images/WWFBanner.webp')] bg-cover bg-center bg-no-repeat relavtive flex justify-center">
+      <WWFNavbar></WWFNavbar>
+      <div className="w-full h-[calc(100vh-5rem)] bg-[url('/images/WWFBanner.webp')] bg-cover bg-center bg-no-repeat relavtive flex justify-center">
         <div className='flex flex-col justify-center absolute top-[15%] items-center px-4'>
           <img src="/images/WWFHello.webp" alt="WWCHello" className='w-8/12' />
-          <p className='text-[#3D71B8] text-lg md:text-2xl text-center'>Welcome to WagWel Canine! We are a dog rescue cafe.</p>
+          <p className='text-[#3D71B8] text-lg md:text-2xl text-center'>Welcome to WagWel Feline! We are a cat rescue cafe.</p>
         </div>
       </div>
+      <video autoPlay loop muted playsInline className='w-full'>
+        <source src="./images/WWF-homepage.webm" type="video/mp4" alt='gif' />
+      </video>
       <div className='w-full bg-[#FAA627] flex flex-col items-center'>
         <div className='text-[#F9EDD2] flex flex-col p-8 items-center gap-4 text-center'>
           <h1 className='text-3xl md:text-5xl'>OUR MISSION</h1>
@@ -70,19 +73,19 @@ function WWFHomepage() {
             <div className='grid grid-cols-3 items-center justify-items-center'>
               <img src="/images/CATICON.webp" alt="CATICON" className='w-1/2 col-span-2 hover:scale-110 transition-all' />
             </div>
-            <div className='grid grid-cols-3 w-full items-center justify-items-center'>
+            <div className='grid grid-cols-3 w-full items-end justify-items-center'>
               <img src="/images/CAKEICON.webp" alt="CAKEICON" className='w-1/2 hover:scale-110 transition-all' />
               <img src="/images/GLASSICON.webp" alt="GLASSICON" className='w-1/2 hover:scale-110 transition-all' />
-              <img src="/images/LENICON.webp" alt="LENICON"  className='w-1/2 hover:scale-110 transition-all'/>
+              <img src="/images/LENICON.webp" alt="LENICON" className='w-1/2 hover:scale-110 transition-all' />
             </div>
           </div>
         </div>
       </div>
       <div className='w-full h-16 2xl:h-24 bg-[#F9EDD2]'></div>
-        <OurRescue color='#FAA627' type='cat' />
-        <OurPartner color='#FAA627' partners={partners} />
-        <SupportUs color='#FAA627' bg="url('./images/WWFSupport.webp')" />
-        <Footer color='#FAA627' logo='./images/WWFFLogo.webp'></Footer>
+      <OurRescue color='#FAA627' type='cat' />
+      <OurPartner color='#FAA627' partners={partners} />
+      <SupportUs color='#FAA627' bg="url('./images/WWFSupport.webp')" />
+      <Footer color='#FAA627' logo='./images/WWFFLogo.webp'></Footer>
     </div>
   )
 }

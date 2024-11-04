@@ -30,7 +30,7 @@ const Navbar = () => {
           </Link>
 
           {/* Navigation Links - Ẩn trên tablet */}
-          <nav className="hidden lg:flex gap-6 text-xs lg:text-base">
+          <nav className="hidden lg:flex gap-6 xl:gap-20 text-xs lg:text-base">
             <Link
               to="/"
               className={`text-[#F9EDD2] ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
@@ -59,11 +59,11 @@ const Navbar = () => {
             <Link to="/WWAHome">
               <WWAIcon />
             </Link>
-            <Link to="/WWFHome">
-              <WWFIcon />
-            </Link>
             <Link to='/WWCHome'>
               <WWCIcon />
+            </Link>
+            <Link to="/WWFHome">
+              <WWFIcon />
             </Link>
           </div>
 
@@ -124,11 +124,11 @@ const Navbar = () => {
               <Link to="/WWAHome">
                 <WWAIcon />
               </Link>
-              <Link to="/WWFHome">
-                <WWFIcon />
-              </Link>
               <Link to='/WWCHome'>
                 <WWCIcon />
+              </Link>
+              <Link to="/WWFHome">
+                <WWFIcon />
               </Link>
             </div>
           </nav>
@@ -136,7 +136,7 @@ const Navbar = () => {
       </header>
 
       {/* Padding to prevent content from being hidden behind the navbar */}
-      <div className="h-16 md:h-0"></div>
+      <div className="h-20"></div>
     </>
   );
 };

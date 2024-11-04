@@ -12,8 +12,8 @@ function AboutUsBody() {
           <p>Get to know more about who we are, how our story started, and where we are going by scrolling below!</p>
         </div>
       </div>
-      <div className='bg-[url(/images/Ourmission.webp)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-3 py-8 px-4 lg:px-12 lg:py-16'>
-        <div className='col-start-2 col-span-2 xl:col-start-4 2xl:col-start-3 2xl:col-span-1 h-full w-full'>
+      <div className='bg-[url(/images/Ourmission.webp)] h-[41rem] 2xl:h-[48rem] min-[2000px]:h-[57rem] w-full bg-cover grid grid-cols-1 md:grid-cols-3 xl:grid-cols-10 2xl:grid-cols-7 py-8 px-4 lg:px-12 lg:py-16'>
+        <div className='col-start-2 col-span-2 xl:col-start-8 xl:col-span-3 2xl:col-start-6 2xl:col-span-2 h-full w-full'>
           <div className='bg-[#F9EDD2] border-[#991B1E] border-2 rounded-2xl h-full w-full shadow-[10px_10px_0px_0px_#991B1E]'>
             <div className='h-full w-full p-4 xl:p-8 flex flex-col text-[#991B1E] justify-evenly'>
               <h1 className='text-3xl sm:text-5xl min-[2000px]:text-7xl'>Origins and Mission</h1>
@@ -61,7 +61,8 @@ function AboutUsBody() {
         <div className='md:col-span-2 xl:col-span-1 h-full w-full '>
           <div className='bg-[#F9EDD2] border-[#991B1E] border-2 rounded-2xl h-full w-full shadow-[10px_10px_0px_0px_#991B1E] '>
             <div className='h-full w-full p-4 xl:p-8 flex flex-col text-[#991B1E] justify-start gap-4 min-[2000px]:gap-8'>
-              <h1 className='text-xl sm:text-2xl min-[2000px]:text-3xl'>WagWel Rescue is guided by the following core values - <br /><span className='text-3xl sm:text-5xl min-[2000px]:text-7xl'>WagWel CARES:</span></h1>
+              <p className='text-xl sm:text-2xl min-[2000px]:text-3xl font-bold'>WagWel Rescue is guided by the following core values -</p>
+              <h1 className='text-3xl sm:text-5xl min-[2000px]:text-7xl'> WagWel CARES:</h1>
               <p className='text-lg sm:text-xl min-[2000px]:text-3xl'><span className='font-bold'><span className='text-xl sm:text-2xl min-[2000px]:text-4xl'>C</span>ollaborative</span>: We thrive through internal and external teamwork, working closely with individual, organizational, and community partners to achieve shared goals.</p>
               <p className='text-lg sm:text-xl min-[2000px]:text-3xl'><span className='font-bold'><span className='text-xl sm:text-2xl min-[2000px]:text-4xl'>A</span>daptable</span>: We are flexible and responsive to the changing needs of the animals and communities we serve.</p>
               <p className='text-lg sm:text-xl min-[2000px]:text-3xl'><span className='font-bold'><span className='text-xl sm:text-2xl min-[2000px]:text-4xl'>R</span>espectful</span>: We treat all animals and people with dignity and compassion.</p>
@@ -76,7 +77,7 @@ function AboutUsBody() {
             <img src="./images/Heart.png" alt="Group141" className='w-6/12 sm:w-8/12 lg:w-10/12 2xl:w-full ' />
           </div>
           <div className='w-full h-full absolute flex flex-col justify-center items-center'>
-            <img src="./images/Group 145.png" alt="Group141" className='w-10/12  h-full ' />
+            <img src="./images/Frame 8.webp" alt="Group141" className='aspect-[3/4] h-full' />
           </div>
         </div>
       </div>

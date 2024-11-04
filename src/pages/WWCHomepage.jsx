@@ -56,6 +56,9 @@ function WWCHomepage() {
           <p className='text-[#B84626] text-lg md:text-2xl text-center'>Welcome to WagWel Canine! We are a dog rescue cafe.</p>
         </div>
       </div>
+      <video autoPlay loop muted playsInline className='w-full'>
+        <source src="./images/WWC-Homepage.webm" type="video/mp4" alt='gif' />
+      </video>
       <div className='w-full bg-[#F08122] flex flex-col items-center'>
         <div className='text-[#F9EDD2] flex flex-col p-8 items-center gap-4 text-center'>
           <h1 className='text-3xl md:text-5xl'>OUR MISSION</h1>
@@ -73,7 +76,7 @@ function WWCHomepage() {
             <div className='grid grid-cols-3 w-full items-center justify-items-center'>
               <img src="/images/CUPICON.webp" alt="DOGICON" className='w-1/2 hover:scale-110 transition-all' />
               <img src="/images/PIZZAICON.webp" alt="DOGICON" className='w-1/2 hover:scale-110 transition-all' />
-              <img src="/images/BONEICON.webp" alt="DOGICON"  className='w-2/3 hover:scale-110 transition-all'/>
+              <img src="/images/BONEICON.webp" alt="DOGICON" className='w-2/3 hover:scale-110 transition-all' />
             </div>
           </div>
         </div>

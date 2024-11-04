@@ -2,10 +2,46 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 
-const Footer = ({color,logo}) => {
+const Footer = ({ color, logo }) => {
+  const buttonClass = color === '#991B1E'
+    ? 'hover:text-[#991B1E] hover:bg-[#F9EDD2]'
+    : color === '#AF1E3C'
+      ? 'hover:text-[#AF1E3C] hover:bg-[#F9EDD2]'
+      : color === '#F08122'
+        ? 'hover:text-[#F08122] hover:bg-[#F9EDD2]'
+        : color === '#FAA627'
+          ? 'hover:text-[#FAA627] hover:bg-[#F9EDD2]'
+          : 'hover:text-[#FAA627] hover:bg-[#F9EDD2]';
+  const FBLink = color === '#991B1E'
+    ? 'https://www.facebook.com/WagWelRescue/'
+    : color === '#AF1E3C'
+      ? 'https://www.facebook.com/WagWelAdoption/'
+      : color === '#F08122'
+        ? 'https://www.facebook.com/WagWelSaigonCanine/'
+        : color === '#FAA627'
+          ? 'https://www.facebook.com/WagWelSaigonFeline/'
+          : 'https://www.facebook.com/WagWelRescue/';
+  const IGLink = color === '#991B1E'
+    ? 'https://www.instagram.com/wagwelrescue'
+    : color === '#AF1E3C'
+      ? 'https://www.instagram.com/wagwelrescue'
+      : color === '#F08122'
+        ? 'https://www.instagram.com/wagwelcanine'
+        : color === '#FAA627'
+          ? 'https://www.instagram.com/wagwelfeline'
+          : 'https://www.instagram.com/wagwelrescue';
+  const TIKTOKLink = color === '#991B1E'
+    ? 'https://www.tiktok.com/@wagwelfeline'
+    : color === '#AF1E3C'
+      ? 'https://www.tiktok.com/@wagwelfeline'
+      : color === '#F08122'
+        ? 'https://www.tiktok.com/@wagwelcanine'
+        : color === '#FAA627'
+          ? 'https://www.tiktok.com/@wagwelfeline'
+          : 'https://www.tiktok.com/@wagwelfeline';
   return (
     <footer className="text-[#F9EDD2] py-8 px-4" style={{
-      backgroundColor:color,
+      backgroundColor: color,
     }}>
       <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo Section */}
@@ -24,13 +60,13 @@ const Footer = ({color,logo}) => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Social media</h3>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/WagWelRescue/" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
+                <a href={FBLink} target='_blank' className={`${buttonClass} border-2 border-[#F9EDD2] rounded-full p-2`}>
                   <FaFacebookF size={24} />
                 </a>
-                <a href="https://www.instagram.com/wagwelrescue" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
+                <a href={IGLink} target='_blank' className={`${buttonClass} border-2 border-[#F9EDD2] rounded-full p-2`}>
                   <FaInstagram size={24} />
                 </a>
-                <a href="https://www.tiktok.com/@wagwelfeline" target='_blank' className="hover:text-[#991B1E] hover:bg-[#F9EDD2] border-2 border-current rounded-full p-2">
+                <a href={TIKTOKLink} target='_blank' className={`${buttonClass} border-2 border-[#F9EDD2] rounded-full p-2`}>
                   <FaTiktok size={24} />
                 </a>
               </div>

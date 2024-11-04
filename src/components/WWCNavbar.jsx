@@ -30,7 +30,7 @@ const WWCNavbar = () => {
           </Link>
 
           {/* Navigation Links - Ẩn trên tablet */}
-          <nav className="hidden lg:flex gap-6 text-xs lg:text-base">
+          <nav className="hidden lg:flex gap-6 xl:gap-20 text-xs lg:text-base">
             <Link
               to="/WWCHome"
               className={`text-[#F9EDD2] ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
@@ -59,11 +59,11 @@ const WWCNavbar = () => {
             <Link to="/WWAHome">
               <WWAIcon />
             </Link>
-            <Link to="/WWFHome">
-              <WWFIcon />
-            </Link>
             <Link to='/WWCHome'>
               <WWCIcon active={true} />
+            </Link>
+            <Link to="/WWFHome">
+              <WWFIcon />
             </Link>
           </div>
 
@@ -124,11 +124,11 @@ const WWCNavbar = () => {
               <Link to="/WWAHome">
                 <WWAIcon />
               </Link>
-              <Link to="/WWFHome">
-                <WWFIcon />
-              </Link>
               <Link to='/WWCHome'>
                 <WWCIcon active={true} />
+              </Link>
+              <Link to="/WWFHome">
+                <WWFIcon />
               </Link>
             </div>
           </nav>

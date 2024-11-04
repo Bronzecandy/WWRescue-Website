@@ -98,7 +98,7 @@ export default function OurRescue({ color, type }) {
       imageUrl: './images/cats/Bob.png',
       name: 'Bob',
       subname: ['Diaper baby.', 'One broken leg.', 'Pro at stealing food!'],
-      gender: '',
+      gender: 'male',
     },
     {
       imageUrl: './images/cats/La.png',
@@ -273,7 +273,7 @@ export default function OurRescue({ color, type }) {
     <div className='bg-[#F9EDD2] py-8 md:px-2 lg:px-8'>
       <h1 className="text-3xl md:text-5xl mb-4 text-center" style={{
         color: color
-      }}>OUR RESCUES {type === 'dog' ? 'DOG' : type === 'cat' ? 'CAT' : ''}</h1>
+      }}> {type === 'dog' ? 'OUR RESCUE DOG' : type === 'cat' ? 'OUR RESCUE CAT' : 'OUR RESCUES'}</h1>
       {type === 'cat' ? null : <div>
         <div className="text-center  md:text-lg text-xs">
           {type === 'dog' || type === 'cat' ? null : <h2 className="text-2xl md:text-3xl text-[#F08122] font-semibold py-5">

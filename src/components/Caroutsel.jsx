@@ -44,7 +44,7 @@ const Carousel = () => {
         autoplay={{ delay: 5000, }}
         spaceBetween={0}
         slidesPerView={1}
-        className='xl:h-screen h-full'
+        className='xl:h-[calc(100vh-5rem)] h-full'
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} style={{ height: 'auto' }}>
