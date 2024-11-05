@@ -12,6 +12,10 @@ function WWABody() {
                         in a happy home that love them forever.</p>
                 </div>
             </div>
+            <video autoPlay loop muted playsInline className='w-full'>
+                <source src="./images/WWA-homepage.webm" type="video/webm" alt='WWAgif'></source>
+                <source src="./images/WWA-homepage.mp4" type="video/mp4" alt='WWAgif'/>
+            </video>
             <div className='w-full bg-[#AF1E3C] flex flex-col items-center'>
                 <div className='text-[#F9EDD2] flex flex-col p-8 items-center gap-4 text-center'>
                     <h1 className='text-3xl md:text-5xl'>OUR MISSION</h1>
