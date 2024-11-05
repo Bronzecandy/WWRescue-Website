@@ -73,8 +73,8 @@ function AboutUsBody() {
         </div>
         <div className='relative max-[640px]:row-start-1'>
 
-          <div className='absolute top-[6rem] left-[9rem] group-hover:top-[2rem] group-hover:left-[3rem] sm:top-[16.5rem] sm:left-[6rem] sm:group-hover:left-[1rem] sm:group-hover:top-[11.5rem]  xl:left-[12rem] xl:group-hover:left-[7rem] min-[2000px]:left-[16.5rem] min-[2000px]:group-hover:left-[14.5rem] group-hover:opacity-100 opacity-0 transition-all'>
-            <img src="./images/Heart.png" alt="Group141" className='w-6/12 sm:w-8/12 lg:w-10/12 2xl:w-full ' />
+          <div className='absolute top-1/2 left-1/2 group-hover:top-[0.5rem] group-hover:left-[20%]  group-hover:opacity-100 opacity-0 transition-all'>
+            <img src="./images/Heart.png" alt="Group141" className='w-6/12 sm:w-8/12 xl:w-10/12 2xl:w-full ' />
           </div>
           <div className='w-full h-full absolute flex flex-col justify-center items-center'>
             <img src="./images/Frame 8.webp" alt="Group141" className='aspect-[3/4] h-5/6' />
