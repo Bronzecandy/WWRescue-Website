@@ -58,6 +58,7 @@ function WWFHomepage() {
       </div>
       <video autoPlay loop muted playsInline className='w-full'>
         <source src="./images/WWF-homepage.webm" type="video/webm" alt='WWFgif' />
+        <source src="./images/WWF-homepage.mp4" type="video/mp4" alt='WWFgif'/>
       </video>
       <div className='w-full bg-[#FAA627] flex flex-col items-center'>
         <div className='text-[#F9EDD2] flex flex-col p-8 items-center gap-4 text-center'>

@@ -58,6 +58,7 @@ function WWCHomepage() {
       </div>
       <video autoPlay loop muted playsInline className='w-full'>
         <source src="./images/WWC-Homepage.webm" type="video/webm" alt='WWCgif' />
+        <source src="./images/WWC-Homepage.mp4" type="video/mp4" alt='WWCgif'/>
       </video>
       <div className='w-full bg-[#F08122] flex flex-col items-center'>
         <div className='text-[#F9EDD2] flex flex-col p-8 items-center gap-4 text-center'>
