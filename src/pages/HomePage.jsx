@@ -53,7 +53,7 @@ export default function HomePage() {
             <Navbar></Navbar>
             <Carousel></Carousel>
             <video autoPlay loop muted playsInline className='w-full'>
-                <source src="./images/gif.webm" type="video/mp4" alt='gif'/>
+                <source src="./images/gif.webm" type="video/webm" alt='Home gif'/>
             </video>
             <div className='2xl:text-lg lg:text-base text-[10px]'>
                 <div className="bg-[#991B1E] px-2 md:px-20 py-5 ">
