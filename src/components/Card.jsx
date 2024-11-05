@@ -29,7 +29,7 @@ const DogCard = ({ image, subnames, gender, color, backgroundImage, name }) => {
           color: color,
         }}>
         {/* Name and Gender */}
-        <h2 className="text-2xl font-bold mb-2">
+        <h2 className="text-2xl font-bold mb-2 flex justify-center gap-2">
           {name}{' '}
           <span className="inline-block text-blue-500">
             {gender === 'male' ? (

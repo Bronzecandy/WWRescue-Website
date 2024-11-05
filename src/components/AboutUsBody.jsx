@@ -77,7 +77,7 @@ function AboutUsBody() {
             <img src="./images/Heart.png" alt="Group141" className='w-6/12 sm:w-8/12 lg:w-10/12 2xl:w-full ' />
           </div>
           <div className='w-full h-full absolute flex flex-col justify-center items-center'>
-            <img src="./images/Frame 8.webp" alt="Group141" className='aspect-[3/4] h-full' />
+            <img src="./images/Frame 8.webp" alt="Group141" className='aspect-[3/4] h-5/6' />
           </div>
         </div>
       </div>
