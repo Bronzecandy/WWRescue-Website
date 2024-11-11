@@ -76,8 +76,8 @@ function AboutUsBody() {
           <div className='absolute top-1/2 left-1/2 group-hover:top-[0.5rem] group-hover:left-[20%]  group-hover:opacity-100 opacity-0 transition-all'>
             <img src="./images/Heart.png" alt="Group141" className='w-6/12 sm:w-8/12 xl:w-10/12 2xl:w-full ' />
           </div>
-          <div className='w-full h-full absolute flex flex-col justify-center items-center'>
-            <img src="./images/Frame 8.webp" alt="Group141" className='aspect-[3/4] h-5/6' />
+          <div className='w-full h-full absolute flex flex-col justify-end items-center'>
+            <img src="./images/Frame 8.webp" alt="Group141" className='aspect-[3/4] h-[90%]' />
           </div>
         </div>
       </div>

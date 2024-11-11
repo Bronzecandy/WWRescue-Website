@@ -158,7 +158,7 @@ export default function OurRescue({ color, type }) {
       imageUrl: './images/cats/11. Nene.png',
       name: 'Nene',
       subname: ['Princes.', 'Will answer your call with her birdy voice.', 'Shoe rack is her favorite spot.'],
-      gender: 'male',
+      gender: 'female',
     },
     {
       imageUrl: './images/cats/12. Noah.png',
