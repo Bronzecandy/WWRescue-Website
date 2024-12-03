@@ -48,10 +48,15 @@ export default function HomePage() {
             description: 'Pet Cleaning Appliances Sponsor'
         },
     ];
+    const slides = [
+        './images/WWRBanner.webp',
+        './images/WWRBanner.webp',
+        './images/WWRBanner.webp',
+      ];
     return (
         <>
             <Navbar></Navbar>
-            <Carousel></Carousel>
+            <Carousel slides={slides} color='#991B1E' className='carousel-one'></Carousel>
             <video autoPlay loop muted playsInline className='w-full'>
                 <source src="./images/gif.webm" type="video/webm" alt='Home gif'></source>
                 <source src="./images/gif.mp4" type="video/mp4" alt='Home gif'/>

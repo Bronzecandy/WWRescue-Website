@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import SupportUs from '../components/SupportUs'
 import OurPartner from '../components/OurPartner'
 import OurRescue from '../components/OurRescue'
+import Carousel from '../components/Caroutsel'
 function WWCHomepage() {
   const partners = [
     {
@@ -47,15 +48,15 @@ function WWCHomepage() {
       description: 'Pet Cleaning Appliances Sponsor'
     },
   ];
+  const slides = [
+    './images/Banner WWC 1.webp',
+    './images/Banner WWC 2.webp',
+    './images/Banner WWC 3.webp',
+  ];
   return (
     <div>
       <WWCNavbar></WWCNavbar>
-      <div className="w-full h-[calc(100vh-5rem)] bg-[url('/images/WWCBanner.webp')] bg-cover bg-center bg-no-repeat relavtive flex justify-center">
-        <div className='flex flex-col justify-center absolute top-[15%] items-center px-4'>
-          <img src="/images/WWCHello.webp" alt="WWCHello" className='w-8/12' />
-          <p className='text-[#B84626] text-lg md:text-2xl text-center'>Welcome to WagWel Canine! We are a dog rescue cafe.</p>
-        </div>
-      </div>
+      <Carousel slides={slides} color='#F08122' className='carousel-two'></Carousel>
       <video autoPlay loop muted playsInline className='w-full'>
         <source src="./images/WWC-Homepage.webm" type="video/webm" alt='WWCgif' />
         <source src="./images/WWC-Homepage.mp4" type="video/mp4" alt='WWCgif'/>

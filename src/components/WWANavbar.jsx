@@ -8,12 +8,12 @@ const WWANavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // Trạng thái của menu
 
   useEffect(() => {
-    if (location.pathname === '/WWAHome') {
+    if (location.pathname === '/adoption') {
       setActiveLink('HOME');
-    } else if (location.pathname === '/WWAHome/About') {
+    } else if (location.pathname === '/adoption/ourrescue') {
       // Giả sử đường dẫn này dành cho About Us và Support Sustainable Rescue
       setActiveLink('ABOUT US');
-    } else if (location.pathname === '/WWAHome/Support') {
+    } else if (location.pathname === '/adoption/ourpartnershelters') {
       setActiveLink('SUPPORT SUSTAINABLE RESCUE');
     }
   }, [location]);
@@ -25,29 +25,29 @@ const WWANavbar = () => {
       <header className="bg-[#AF1E3C] fixed w-full z-20 border-b border-[#F9EDD2]">
         <div className="flex items-center justify-between p-4">
           {/* Logo Section */}
-          <Link to="/WWAhome" className="flex">
+          <Link to="/adoption" className="flex">
             <img src="/images/Group 154.webp" alt="Wagwell Rescue" className="h-14" />
           </Link>
 
           {/* Navigation Links - Ẩn trên tablet */}
           <nav className="hidden lg:flex gap-6 xl:gap-20 text-xs lg:text-base">
             <Link
-              to="/WWAHome"
+              to="/adoption"
               className={`text-[#F9EDD2] ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
               HOME
             </Link>
             <Link
-              to="/WWAHome/About"
+              to="/adoption/ourrescue"
               className={`text-[#F9EDD2] ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
-              ABOUT US
+              OUR RESCUES
             </Link>
             <Link
-              to="/WWAHome/Support"
+              to="/adoption/ourpartnershelters"
               className={`text-[#F9EDD2] ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
-              OUR RESCUE
+              OUR PARTNER SHELTERS
             </Link>
           </nav>
 
@@ -56,13 +56,13 @@ const WWANavbar = () => {
             <Link to="/">
               <WWRIcon></WWRIcon>
             </Link>
-            <Link to="/WWAHome">
+            <Link to="/adoption">
               <WWAIcon active={true} />
             </Link>
-            <Link to='/WWCHome'>
+            <Link to='/canine'>
               <WWCIcon />
             </Link>
-            <Link to="/WWFHome">
+            <Link to="/feline">
               <WWFIcon />
             </Link>
           </div>
@@ -91,7 +91,7 @@ const WWANavbar = () => {
           </div>
           <nav className="mt-4">
             <Link
-              to="/WWAHome"
+              to="/adoption"
               className={`block py-2 ${activeLink === 'HOME' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
@@ -100,34 +100,34 @@ const WWANavbar = () => {
               HOME
             </Link>
             <Link
-              to="/WWAHome/About"
+              to="/adoption/ourrescue"
               className={`block py-2 ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
               }}
             >
-              ABOUT US
+              OUR RESCUES
             </Link>
             <Link
-              to="/WWAHome/Support"
+              to="/adoption/ourpartnershelters"
               className={`block py-2 ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
               }}
             >
-              SUPPORT SUSTAINABLE RESCUE
+              OUR PARTNER SHELTERS
             </Link>
             <div className="flex gap-4 pt-4 flex-wrap">
               <Link to="/">
                 <WWRIcon></WWRIcon>
               </Link>
-              <Link to="/WWAHome">
+              <Link to="/adoption">
                 <WWAIcon active={true} />
               </Link>
-              <Link to='/WWCHome'>
+              <Link to='/canine'>
                 <WWCIcon />
               </Link>
-              <Link to="/WWFHome">
+              <Link to="/feline">
                 <WWFIcon />
               </Link>
             </div>

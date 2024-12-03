@@ -9,23 +9,25 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./utils/ScrollToTop";
 function App() {
 
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage></HomePage>} />
-        <Route path="/About" element={<AboutUsPage/>} />
-        <Route path="/Support" element={<ComingsoonPages color="#991B1E"/>} />
-        <Route path="/WWAHome" element={<WWAHomePage/>} />
-        <Route path="/WWAHome/About" element={<ComingsoonPages color="#AF1E3C"/>} />
-        <Route path="/WWAHome/Support" element={<ComingsoonPages color="#AF1E3C"/>} />
-        <Route path="/WWCHome" element={<WWCHomepage/>}></Route>
-        <Route path="/WWCHome/About" element={<ComingsoonPages color="#F08122"/>} />
-        <Route path="/WWCHome/Support" element={<ComingsoonPages color="#F08122"/>} />
-        <Route path="/WWFHome" element={<WWFHomepage/>}></Route>
-        <Route path="/WWFHome/About" element={<ComingsoonPages color="#FAA627"/>} />
-        <Route path="/WWFHome/Support" element={<ComingsoonPages color="#FAA627"/>} />
+        <Route path="/aboutus" element={<AboutUsPage/>} />
+        <Route path="/support" element={<ComingsoonPages color="#991B1E"/>} />
+        <Route path="/adoption" element={<WWAHomePage/>} />
+        <Route path="/adoption/ourrescue" element={<ComingsoonPages color="#AF1E3C"/>} />
+        <Route path="/adoption/ourpartnershelters" element={<ComingsoonPages color="#AF1E3C"/>} />
+        <Route path="/canine" element={<WWCHomepage/>}></Route>
+        <Route path="/canine/aboutus" element={<ComingsoonPages color="#F08122"/>} />
+        <Route path="/canine/ourrescue" element={<ComingsoonPages color="#F08122"/>} />
+        <Route path="/feline" element={<WWFHomepage/>}></Route>
+        <Route path="/feline/aboutus" element={<ComingsoonPages color="#FAA627"/>} />
+        <Route path="/feline/ourrescue" element={<ComingsoonPages color="#FAA627"/>} />
       </Routes>
     </Router>
   )

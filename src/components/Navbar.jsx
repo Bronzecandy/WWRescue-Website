@@ -38,13 +38,13 @@ const Navbar = () => {
               HOME
             </Link>
             <Link
-              to="/About"
+              to="/aboutus"
               className={`text-[#F9EDD2] ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
               ABOUT US
             </Link>
             <Link
-              to="/Support"
+              to="/support"
               className={`text-[#F9EDD2] ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
             >
               SUPPORT SUSTAINABLE RESCUE
@@ -56,13 +56,13 @@ const Navbar = () => {
             <Link to="/">
               <WWRIcon active={true}></WWRIcon>
             </Link>
-            <Link to="/WWAHome">
+            <Link to="/adoption">
               <WWAIcon />
             </Link>
-            <Link to='/WWCHome'>
+            <Link to='/canine '>
               <WWCIcon />
             </Link>
-            <Link to="/WWFHome">
+            <Link to="/feline">
               <WWFIcon />
             </Link>
           </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
               HOME
             </Link>
             <Link
-              to="/About"
+              to="/aboutus"
               className={`block py-2 ${activeLink === 'ABOUT US' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
@@ -109,7 +109,7 @@ const Navbar = () => {
               ABOUT US
             </Link>
             <Link
-              to="/Support"
+              to="/support"
               className={`block py-2 ${activeLink === 'SUPPORT SUSTAINABLE RESCUE' ? 'font-bold' : 'transition-all hover:font-bold'}`}
               onClick={() => {
                 toggleMenu();
@@ -121,13 +121,13 @@ const Navbar = () => {
               <Link to="/">
                 <WWRIcon active={true}></WWRIcon>
               </Link>
-              <Link to="/WWAHome">
+              <Link to="/adoption">
                 <WWAIcon />
               </Link>
-              <Link to='/WWCHome'>
+              <Link to='/canine'>
                 <WWCIcon />
               </Link>
-              <Link to="/WWFHome">
+              <Link to="/feline">
                 <WWFIcon />
               </Link>
             </div>
